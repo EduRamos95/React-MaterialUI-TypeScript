@@ -1,5 +1,6 @@
 import React from "react";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { info } from "console";
 
 type ThemeProp = {
     children: JSX.Element;
@@ -26,33 +27,36 @@ const theme = createTheme ({
         background: {
             default: themePalette.WHITECORE,
         },
-        primary: {
+        secondary: {
             light:themePalette.CELESTECORELIGTH,
             main: themePalette.CELESTECORE,
             dark: themePalette.CELESTECOREDARK,
             contrastText: themePalette.BLACKCORE,
         },
-        secondary: {
+        primary: {
             light:themePalette.NARANJACORELIGTH,
             main: themePalette.NARANJACORE,
-            dark: themePalette.NARANJACOREDARK,
+            dark: themePalette.NARANJACOREDARK, 
             contrastText: themePalette.WHITECORE,
+        },
+        info:{
+            main: themePalette.BLACKCORE,
         }
     },
     typography: {
         fontFamily: themePalette.FONT_GLOBAL,
     },
-    components: {
-        MuiButton: {
-            defaultProps: {
-                style: {
-                    textTransform: "none",
-                    boxShadow: "none",
-                    borderRadius: "0.5em",
-                }
-            }
-        }
-    }
+    // components: {
+    //     MuiButton: {
+    //         defaultProps: {
+    //             style: {
+    //                 textTransform: "none",
+    //                 boxShadow: "none",
+    //                 borderRadius: "0.5em",
+    //             }
+    //         }
+    //     }
+    // }
 });
 
 export const ThemeConfig: React.FunctionComponent<ThemeProp> = ({ children }) => {

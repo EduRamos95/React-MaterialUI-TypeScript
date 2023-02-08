@@ -11,7 +11,8 @@ import { red } from '@mui/material/colors';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { top100Films } from '../assets/top100'
-import { wrap } from 'module';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import { grey } from '@mui/material/colors';
 
 export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
     const FilterItems = [
@@ -32,7 +33,7 @@ export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
         },
         {
             text: 'Levantamiento / Emision',
-            icon: <DescriptionIcon />,
+            icon: <AssignmentIcon />,
             path: '/'
         }
     ] 
@@ -55,14 +56,14 @@ export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
                   // key={item.text}
                   sx={{display:'flex'}}>
                     <ListItemText >
-                    <ListItemIcon >{item.icon}</ListItemIcon>
+                    <ListItemIcon color='#000'>{item.icon}</ListItemIcon>
                     <Autocomplete
                     disablePortal
-                    
+                    color='info'
                     id="combo-box-demo"
                     options={top100Films}
                     sx={{ minWidth: '250px', maxWidth: '80%', }}
-                    renderInput={(params) => <TextField {...params} label={item.text} />}
+                    renderInput={(params) => <TextField color='info' {...params} label={item.text} size='medium'/>}
                     />
                     </ListItemText>
                 </ListItem>

@@ -15,13 +15,56 @@ import AdbIcon from '@mui/icons-material/Adb';
 import YourSVG from '../core_icons/CoreCapitalSAF_logo.svg'
 import { makeStyles } from "@mui/material";
 import { minWidth, padding, width } from "@mui/system";
-
+import SearchIcon from '@mui/icons-material/Search';
+import SensorOccupiedIcon from '@mui/icons-material/SensorOccupied';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ManageSearchIcon from '@mui/icons-material/ManageSearch';
+import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
+import { pink } from "@mui/material/colors";
+import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
+import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 export const NavBar: React.FunctionComponent<{}> = () => {
     
-    const pages = ['Actualizar', 'Busqueda', 'Carga Archivo'];
-    const settings = ['Profile', 'Account', 'Logout'];
-    
+    // const pages = ['Actualizar', 'Busqueda', 'Carga Archivo'];
+    const pages = [
+        {
+            name: 'Actualizar',
+            ruta: '/actualizar',
+            sticon: <SensorOccupiedIcon />,
+        },
+        {
+            name: 'Busqueda',
+            ruta: '/buscar',
+            sticon: <ManageSearchIcon />,
+        },
+        {
+            name: 'Carga Archivo',
+            ruta: '/archivar',
+            sticon: <CloudUploadOutlinedIcon />,
+        }
+    ]
+    // const routs = ['/usuarios','/busqueda', '/archivos'];
+    // const settings = ['Profile', 'Account', 'Logout'];
+    const settings = [
+        {
+            name: 'Profile',
+            ruta: '/Profile/:id',
+            sticon: <AccountBoxOutlinedIcon />,
+        },
+        {
+            name: 'Account',
+            ruta: '/Account/:id',
+            sticon: < BadgeOutlinedIcon />,
+        },
+        {
+            name: 'Logout',
+            ruta: '/login',
+            sticon: <LogoutIcon />,
+        }
+    ]
     
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
@@ -50,7 +93,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
             justifyContent: 'space-between',
             //backgroundColor: 'red',
         }}>
-            <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
+            <Box color='info' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
             <img id="img_logo"
               src={YourSVG} alt="No Result"
             />
@@ -81,7 +124,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="info"
             >
                 <MenuIcon />
             </IconButton>
@@ -104,8 +147,11 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 }}
             >
                 {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                    <ListItemIcon>
+                        {page.sticon}
+                    </ListItemIcon>
+                    <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
                 ))}
             </Menu>
@@ -150,14 +196,15 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 }}>
             {pages.map((page) => (
                 <Button
-                color='secondary'
+                startIcon={page.sticon}
+                color='info'
                 variant='contained'
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ 
                     my: 2,
                     color: 'white', 
-                    display: 'inline-block',
+                    display: 'flex',
                     padding: '0.5 em 2em',
                     margin: '0em 0.5em',
                     maxWidth: '20em',
@@ -165,15 +212,15 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                     minWidth: '5em'
                 }}
                 >
-                {page}
+                {page.name}
                 </Button>
             ))}
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <IconButton  onClick={handleOpenUserMenu} sx={{ p: 0}}>
+                <Avatar  alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
                 </IconButton>
             </Tooltip>
             <Menu
@@ -193,8 +240,11 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 onClose={handleCloseUserMenu}
             >
                 {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
+                <MenuItem key={setting.name} onClick={handleCloseUserMenu}>
+                    <ListItemIcon>
+                        {setting.sticon}
+                    </ListItemIcon>
+                    <Typography textAlign="center">{setting.name}</Typography>
                 </MenuItem>
                 ))}
             </Menu>
