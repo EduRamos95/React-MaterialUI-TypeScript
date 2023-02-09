@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+//import AppV1 from './pages/CoreAppV1'
+//import { AppBusqueda } from './pages/CoreBusqueda'
+//import { AppFile } from './pages/CoreFile'
+//import { AppProfile } from './pages/CoreProfile'
+//import { AppUser } from './pages/CoreUsers'
+import  AppRoutes from './pages/CoreAppRoutes'
 import reportWebVitals from './reportWebVitals';
 import { ThemeConfig } from './config/theme.condig';
 
@@ -11,7 +17,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeConfig>
-      <App />
+      <div >
+      <AppRoutes />
+      </div>
     </ThemeConfig>
   </React.StrictMode>
 );

@@ -62,6 +62,7 @@ export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
                     color='info'
                     id="combo-box-demo"
                     options={top100Films}
+                    getOptionLabel ={option => option.name}
                     sx={{ minWidth: '250px', maxWidth: '80%', }}
                     renderInput={(params) => <TextField color='info' {...params} label={item.text} size='medium'/>}
                     />
