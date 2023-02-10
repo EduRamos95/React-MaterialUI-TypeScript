@@ -1,6 +1,8 @@
 import React from 'react';
-import { Container, Grid } from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
 import {NavBar} from '../common/NavBar'
+import { LatMenu } from '../components/LatMenu'
+
 export const AppFile: React.FunctionComponent<{}> = ():JSX.Element => {
     return (
         <Container>
@@ -19,8 +21,10 @@ export const AppFile: React.FunctionComponent<{}> = ():JSX.Element => {
         <Grid item sx={{
           display: 'flex',
         }}>
-        
+        <LatMenu />
         </Grid>
+
+        
   
         </Grid>
         <h1>Estoy en CoreFile</h1>

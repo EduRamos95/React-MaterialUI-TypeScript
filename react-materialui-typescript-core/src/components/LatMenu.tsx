@@ -13,28 +13,43 @@ import Autocomplete from '@mui/material/Autocomplete';
 import { top100Films } from '../assets/top100'
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { grey } from '@mui/material/colors';
+import {newDataUser , newuSer} from '../assets/data_users'
+import {newDataProduct , newProDucto} from '../assets/data_producto'
+import {newDataLevEmi , newNumLev} from '../assets/data_levantamiento'
+import {newDataDocumento , newTipoDoc} from '../assets/data_documento'
 
 export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
-    const FilterItems = [
+    interface filter{
+        text: string,
+        icon: JSX.Element,
+        path: string,
+        tabla: Array<newTipoDoc | newNumLev | newProDucto | newuSer>
+    }
+    
+    const FilterItems:Array<filter> = [
         {
             text: 'Persona',
             icon: <PersonIcon />,
-            path: '/'
+            path: '/',
+            tabla: newDataUser,
         },
         {
             text: 'Documento',
             icon: <DescriptionIcon />,
-            path: '/'
+            path: '/',
+            tabla: newDataDocumento,
         },
         {
             text: 'Producto',
             icon: <MapsHomeWorkIcon />,
-            path: '/'
+            path: '/',
+            tabla: newDataProduct,
         },
         {
             text: 'Levantamiento / Emision',
             icon: <AssignmentIcon />,
-            path: '/'
+            path: '/',
+            tabla: newDataLevEmi,
         }
     ] 
 
@@ -59,12 +74,12 @@ export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
                     <ListItemIcon color='#000'>{item.icon}</ListItemIcon>
                     <Autocomplete
                     disablePortal
-                    color='info'
+                    color='neutral'
                     id="combo-box-demo"
-                    options={top100Films}
+                    options={item.tabla}
                     getOptionLabel ={option => option.name}
                     sx={{ minWidth: '250px', maxWidth: '80%', }}
-                    renderInput={(params) => <TextField color='info' {...params} label={item.text} size='medium'/>}
+                    renderInput={(params) => <TextField color='neutral' {...params} label={item.text} size='medium'/>}
                     />
                     </ListItemText>
                 </ListItem>

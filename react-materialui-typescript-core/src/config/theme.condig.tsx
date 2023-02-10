@@ -25,7 +25,7 @@ const theme = createTheme ({
     palette: {
         mode: 'light',
         background: {
-            default: themePalette.WHITECORE,
+            default: themePalette.CELESTECORE,
         },
         secondary: {
             light:themePalette.CELESTECORELIGTH,
@@ -40,8 +40,14 @@ const theme = createTheme ({
             contrastText: themePalette.WHITECORE,
         },
         info:{
+            main: themePalette.GRISCORE,
+            contrastText: '#fff'
+        },
+        neutral:{
             main: themePalette.BLACKCORE,
+            contrastText: '#fff',
         }
+        
     },
     typography: {
         fontFamily: themePalette.FONT_GLOBAL,
@@ -58,6 +64,30 @@ const theme = createTheme ({
     //     }
     // }
 });
+
+declare module '@mui/material/styles' {
+    interface Palette {
+      neutral: Palette['primary'];
+    }
+  
+    // allow configuration using `createTheme`
+    interface PaletteOptions {
+      neutral?: PaletteOptions['primary'];
+    }
+  }
+  
+  // Update the Button's color prop options
+  declare module '@mui/material/Button' {
+    interface ButtonPropsColorOverrides {
+      neutral: true;
+    }
+  }
+
+  declare module '@mui/material/TextField' {
+    interface TextFieldPropsColorOverrides {
+      neutral: true;
+    }
+  }
 
 export const ThemeConfig: React.FunctionComponent<ThemeProp> = ({ children }) => {
     return (

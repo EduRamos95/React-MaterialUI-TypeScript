@@ -1,8 +1,15 @@
 {
-  "name": "vtwo-react-materialui-typescript-core",
+  "name": "react-materialui-typescript-core",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.8",
+    "@mui/styled-engine": "^5.11.8",
+    "@mui/system": "^5.11.8",
+    "@mui/x-data-grid": "^5.17.23",
     "@svgr/cli": "^6.5.1",
     "@svgr/core": "^6.5.1",
     "@svgr/rollup": "^6.5.1",
@@ -14,6 +21,7 @@
     "@types/node": "^18.13.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/react-router-dom": "^5.3.3",
     "nth-check": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -50,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "@types/path-to-regexp": "^1.7.0",
     "react-scripts": "^5.0.1"
   }
 }

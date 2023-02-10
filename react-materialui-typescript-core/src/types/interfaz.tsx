@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 
 export interface core_route {
     path: string;

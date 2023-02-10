@@ -11,38 +11,40 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+//import AdbIcon from '@mui/icons-material/Adb';
 import YourSVG from '../core_icons/CoreCapitalSAF_logo.svg'
-import { makeStyles } from "@mui/material";
-import { minWidth, padding, width } from "@mui/system";
-import SearchIcon from '@mui/icons-material/Search';
+//import { makeStyles } from "@mui/material";
+//import { minWidth, padding, width } from "@mui/system";
+//import SearchIcon from '@mui/icons-material/Search';
 import SensorOccupiedIcon from '@mui/icons-material/SensorOccupied';
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+//import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
-import { pink } from "@mui/material/colors";
+//import { pink } from "@mui/material/colors";
 import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
-
+//import { Link } from 'react-router-dom';
+import { redirect, Link, useNavigate } from "react-router-dom";
 export const NavBar: React.FunctionComponent<{}> = () => {
     
     // const pages = ['Actualizar', 'Busqueda', 'Carga Archivo'];
+    const navigate = useNavigate();
     const pages = [
         {
             name: 'Actualizar',
-            ruta: '/actualizar',
+            ruta: '/user',
             sticon: <SensorOccupiedIcon />,
         },
         {
             name: 'Busqueda',
-            ruta: '/buscar',
+            ruta: '/search',
             sticon: <ManageSearchIcon />,
         },
         {
             name: 'Carga Archivo',
-            ruta: '/archivar',
+            ruta: '/file',
             sticon: <CloudUploadOutlinedIcon />,
         }
     ]
@@ -51,12 +53,12 @@ export const NavBar: React.FunctionComponent<{}> = () => {
     const settings = [
         {
             name: 'Profile',
-            ruta: '/Profile/:id',
+            ruta: '/profile',
             sticon: <AccountBoxOutlinedIcon />,
         },
         {
             name: 'Account',
-            ruta: '/Account/:id',
+            ruta: '/account',
             sticon: < BadgeOutlinedIcon />,
         },
         {
@@ -147,7 +149,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 }}
             >
                 {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                <MenuItem key={page.name} onClick={() => navigate(page.ruta)}>
                     <ListItemIcon>
                         {page.sticon}
                     </ListItemIcon>
@@ -200,7 +202,8 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 color='info'
                 variant='contained'
                 key={page.name}
-                onClick={handleCloseNavMenu}
+                value={page.ruta}
+                onClick={() => navigate(page.ruta)}
                 sx={{ 
                     my: 2,
                     color: 'white', 
@@ -213,7 +216,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 }}
                 >
                 {page.name}
-                </Button>
+                </Button> 
             ))}
             </Box>
 
@@ -240,7 +243,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 onClose={handleCloseUserMenu}
             >
                 {settings.map((setting) => (
-                <MenuItem key={setting.name} onClick={handleCloseUserMenu}>
+                <MenuItem key={setting.name} onClick={() => navigate(setting.ruta)}>
                     <ListItemIcon>
                         {setting.sticon}
                     </ListItemIcon>
