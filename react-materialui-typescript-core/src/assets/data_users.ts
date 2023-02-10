@@ -5,22 +5,23 @@
 // }
 
 export interface uSer{
-    id: Number,
+    id: number,
     nombre: string,
     apPat: string,
     apMat: string,
     tipoDoc: string,
-    numDoc: Number,
+    numDoc: number,
+    //fecha: Date;
 }
 
 export interface newuSer{
-    id: Number,
+    id: number,
     name: string,
     nombre: string,
     apPat: string,
     apMat: string,
     tipoDoc: string,
-    numDoc: Number,
+    numDoc: number,
 }
 
 // const tipoDoc:tDOC = {

@@ -89,6 +89,12 @@ declare module '@mui/material/styles' {
     }
   }
 
+  // declare module '@mui/icons-material/DocumentScanner'{
+  //   interface IconPropsSizeOverrides {
+  //     neutral: ;
+  //   }
+  // }
+
 export const ThemeConfig: React.FunctionComponent<ThemeProp> = ({ children }) => {
     return (
         <ThemeProvider theme={theme}>

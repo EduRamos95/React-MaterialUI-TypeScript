@@ -23,7 +23,7 @@ export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
         text: string,
         icon: JSX.Element,
         path: string,
-        tabla: Array<newTipoDoc | newNumLev | newProDucto | newuSer>
+        tabla: Array<newTipoDoc | newNumLev | newProDucto | newuSer >
     }
     
     const FilterItems:Array<filter> = [
@@ -50,7 +50,7 @@ export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
             icon: <AssignmentIcon />,
             path: '/',
             tabla: newDataLevEmi,
-        }
+        },
     ] 
 
     return (
@@ -68,7 +68,7 @@ export const LatMenu: React.FunctionComponent<{}> = ():JSX.Element => {
                     alignItems: 'center',
                     }}>
                 <ListItem 
-                  // key={item.text}
+                  // key={}
                   sx={{display:'flex'}}>
                     <ListItemText >
                     <ListItemIcon color='#000'>{item.icon}</ListItemIcon>

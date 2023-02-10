@@ -9,7 +9,7 @@ import {AppUser} from './CoreUsers'
 import {core_route} from '../types/interfaz'
 
 
-const CoreRoute: Array<core_route> = [
+const CoreRoute: core_route[] = [
     {
         path: '/app',
         render: <AppV1/>

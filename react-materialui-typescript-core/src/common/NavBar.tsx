@@ -56,11 +56,11 @@ export const NavBar: React.FunctionComponent<{}> = () => {
             ruta: '/profile',
             sticon: <AccountBoxOutlinedIcon />,
         },
-        {
-            name: 'Account',
-            ruta: '/account',
-            sticon: < BadgeOutlinedIcon />,
-        },
+        // {
+        //     name: 'Account',
+        //     ruta: '/account',
+        //     sticon: < BadgeOutlinedIcon />,
+        // },
         {
             name: 'Logout',
             ruta: '/login',

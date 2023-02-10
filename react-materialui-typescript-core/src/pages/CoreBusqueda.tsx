@@ -10,7 +10,11 @@ import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 
 export const AppBusqueda: React.FunctionComponent<{}> = ():JSX.Element => {
-//export default function AppBusqueda(){
+
+
+
+
+  //export default function AppBusqueda(){
   const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 70 },
     { field: 'firstName', headerName: 'First name', width: 130 },
@@ -101,9 +105,11 @@ export const AppBusqueda: React.FunctionComponent<{}> = ():JSX.Element => {
                 p: 2,
                 boxShadow: 2,
                 border: 2,
-                borderColor: 'primary.light',
+                backgroundColor: '#ffffff',
+                opacity: '1',
+                borderColor: 'neutral.main',
                 '& .MuiDataGrid-cell:hover': {
-                  color: 'neutral.main',
+                  color: 'primary.main',
                 },
               }}
             />
@@ -120,34 +126,34 @@ export const AppBusqueda: React.FunctionComponent<{}> = ():JSX.Element => {
   );
 };
 
-function AppBusqueda1() {
-  //export default function AppBusqueda(){
-    return (
-      <Container>
-        <Grid sx={{
-          display: 'flex',
-          flexDirection: 'column',
+// function AppBusqueda1() {
+//   export default function AppBusqueda(){
+//     return (
+//       <Container>
+//         <Grid sx={{
+//           display: 'flex',
+//           flexDirection: 'column',
   
-        }}>
+//         }}>
   
-        <Grid item sx={{
-          display: 'flex',
-        }}>
-        <NavBar />
-        </Grid>
+//         <Grid item sx={{
+//           display: 'flex',
+//         }}>
+//         <NavBar />
+//         </Grid>
   
-        <Grid item sx={{
-          display: 'flex',
-        }}>
-        <LatMenu />
-        </Grid>
+//         <Grid item sx={{
+//           display: 'flex',
+//         }}>
+//         <LatMenu />
+//         </Grid>
 
-        </Grid>
-        <Button startIcon={<FilterAltOutlinedIcon />}><Typography variant="h1" component="h2">Filtar</Typography></Button>
-        <h1 style={{ display:'flex' }}>Estoy en Busqueda</h1>
-      </Container>
+//         </Grid>
+//         <Button startIcon={<FilterAltOutlinedIcon />}><Typography variant="h1" component="h2">Filtar</Typography></Button>
+//         <h1 style={{ display:'flex' }}>Estoy en Busqueda</h1>
+//       </Container>
       
-    );
-  };
+//     );
+//   };
 
-  export default AppBusqueda1;
+//   export default AppBusqueda1;
