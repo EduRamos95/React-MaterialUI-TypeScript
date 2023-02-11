@@ -4,7 +4,7 @@
 //     pasaporte:String,
 // }
 
-export interface uSer{
+export interface inversionista{
     id: number,
     nombre: string,
     apPat: string,
@@ -14,7 +14,7 @@ export interface uSer{
     //fecha: Date;
 }
 
-export interface newuSer{
+export interface newInversionista{
     id: number,
     name: string,
     nombre: string,
@@ -30,7 +30,7 @@ export interface newuSer{
 //     pasaporte: 'pasaporte',
 // }
 
-export const dataUser:Array<uSer> = [
+export const dataInversionista:Array<inversionista> = [
     {
         id: 3,
         nombre: 'Juan Manuel',
@@ -97,16 +97,16 @@ export const dataUser:Array<uSer> = [
     }
 ]
 
-export function convertirUsuario(usuario: uSer): newuSer {
+export function convertirInver(inver: inversionista): newInversionista {
     return {
-      id: usuario.id,
-      name: usuario.tipoDoc + ': ' + String(usuario.numDoc) + ' ► ' + usuario.apPat + ' ' + usuario.apMat + ', ' + usuario.nombre,
-      nombre: usuario.nombre,
-      apPat: usuario.apPat,
-      apMat: usuario.apMat,
-      tipoDoc: usuario.tipoDoc,
-      numDoc: usuario.numDoc,
+      id: inver.id,
+      name: inver.tipoDoc + ': ' + String(inver.numDoc) + ' ► ' + inver.apPat + ' ' + inver.apMat + ', ' + inver.nombre,
+      nombre: inver.nombre,
+      apPat: inver.apPat,
+      apMat: inver.apMat,
+      tipoDoc: inver.tipoDoc,
+      numDoc: inver.numDoc,
     };
 }
 
-export const newDataUser:Array<newuSer> = dataUser.map((user:uSer):newuSer => convertirUsuario(user));
+export const newDataInversionista:Array<newInversionista> = dataInversionista.map((inVer:inversionista):newInversionista => convertirInver(inVer));
