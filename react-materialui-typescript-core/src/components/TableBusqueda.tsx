@@ -1,23 +1,20 @@
 import React, { useState, useContext } from 'react';
-// import logo from '../logo.svg';
 import '../styles/CoreAppV1.css';
 import {Button, Container, Grid, Typography} from "@mui/material"
-import { NavBar } from '../common/NavBar';
-import { LatMenu } from '../components/LatMenu'
-//import { display } from '@mui/system';
-//import { inherits } from '@babel/types';
+//import { NavBar } from '../common/NavBar';
+//import { LatMenu } from '../components/LatMenu'
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { SelectionContext } from '../context/SelectionContext';
 
 
-export const AppBusqueda: React.FunctionComponent<{}> = ():JSX.Element => {
+export const TableBusqueda: React.FunctionComponent<{}> = ():JSX.Element => {
 
 //// importar 4 datos 
 const { selectedOption1, selectedOption2, selectedOption3, selectedOption4 } = useContext(SelectionContext);
-const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedOption4 } = useContext(SelectionContext);
-  
+// const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedOption4 } = useContext(SelectionContext);
 //export default function AppBusqueda(){
+
   const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 70 },
     { field: 'firstName', headerName: 'First name', width: 130 },
@@ -68,19 +65,6 @@ const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedO
         display: 'flex',
         flexDirection: 'column',
       }}>
-
-      <Grid item sx={{
-        display: 'flex',
-      }}>
-        <NavBar />
-      </Grid>
-
-      <Grid item sx={{
-        display: 'flex',
-      }}>
-        <LatMenu />
-      </Grid>
-
       <Grid item sx={{
         display: 'block',
         width: 'inherit',
@@ -121,42 +105,13 @@ const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedO
         </div>
       )}
       </Grid>
-
       </Grid>
-      <h1 style={{ display:'flex' }}>Estoy en Busqueda</h1>
+      <h1 style={{ display:'flex' }}>TableBusqueda Component</h1>
+      <h4>{selectedOption1?.id}</h4>
+      <h4>{selectedOption2?.id}</h4>
+      <h4>{selectedOption3?.id}</h4>
+      <h4>{selectedOption4?.id}</h4>
     </Container>
     
   );
 };
-
-// function AppBusqueda1() {
-//   export default function AppBusqueda(){
-//     return (
-//       <Container>
-//         <Grid sx={{
-//           display: 'flex',
-//           flexDirection: 'column',
-  
-//         }}>
-  
-//         <Grid item sx={{
-//           display: 'flex',
-//         }}>
-//         <NavBar />
-//         </Grid>
-  
-//         <Grid item sx={{
-//           display: 'flex',
-//         }}>
-//         <LatMenu />
-//         </Grid>
-
-//         </Grid>
-//         <Button startIcon={<FilterAltOutlinedIcon />}><Typography variant="h1" component="h2">Filtar</Typography></Button>
-//         <h1 style={{ display:'flex' }}>Estoy en Busqueda</h1>
-//       </Container>
-      
-//     );
-//   };
-
-//   export default AppBusqueda1;
