@@ -1,5 +1,5 @@
 import React, {useContext, useState}from 'react';
-import Dropzone from 'react-dropzone';
+import Dropzone, { DropEvent, FileRejection } from 'react-dropzone';
 import './Fileupload.css'
 import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
@@ -11,7 +11,7 @@ import BackspaceIcon from '@mui/icons-material/Backspace';
 import { SelectionContext } from '../context/SelectionContext';
 import { margin, palette } from '@mui/system';
 import { themePalette } from '../config/theme.condig';
-
+import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 
 
 const UploadFiles: React.FC = () => {
@@ -19,26 +19,32 @@ const UploadFiles: React.FC = () => {
   const [dataFile, setDataFile] = useState<File | null>(null)
   const [isDisabled, setIsDisabled] = useState<boolean>(false);
 
-  const onDrop = (acceptedFiles: File[]) => {
-    if (acceptedFiles.length !== 1){
-      console.log('Error no upload');
+  const onDrop = (acceptedFiles: File[], fileRejections: FileRejection[], event: DropEvent) => {
+    if (isDisabled) {
+      event.preventDefault();
     }else{
-      setDataFile(acceptedFiles[0]);
-      !dataFile ? setIsDisabled(true) : setIsDisabled(false);
-      console.log(acceptedFiles);
-      console.log(acceptedFiles[0].name);
-      console.log(acceptedFiles[0].size);
-      console.log(acceptedFiles[0].type);
+      if (acceptedFiles.length !== 1){
+        console.log('Error no upload');
+      }else{
+        setDataFile(acceptedFiles[0]);
+        !dataFile ? setIsDisabled(true) : setIsDisabled(false);
+        console.log(acceptedFiles);
+        console.log(acceptedFiles[0].name);
+        console.log(acceptedFiles[0].size);
+        console.log(acceptedFiles[0].type);
+      }
     }
-      
   };
   
+
   const Borrar = () => {
     setIsDisabled(false)
     setDataFile(null)
   }
   
   const { selectedOption1, selectedOption2, selectedOption3, selectedOption4 } = useContext(SelectionContext);
+
+
 
   return (
     <Grid container sx={{
@@ -49,7 +55,12 @@ const UploadFiles: React.FC = () => {
       }}>
       <Grid item sx={{display: 'flex'}}>
       <div id='filedrop'>
-      <Dropzone onDrop={onDrop} disabled={isDisabled}>
+        { !isDisabled &&
+      <Dropzone onDrop={onDrop} disabled={isDisabled} onDragOver={event => {
+        if (isDisabled) {
+        event.preventDefault();
+        }
+      }}>
         {({ getRootProps, getInputProps }) => (
           <section id='secdrop'>
             <div id='dentro' {...getRootProps()}>
@@ -61,11 +72,24 @@ const UploadFiles: React.FC = () => {
                 borderColor: dataFile ? themePalette.NARANJACORE : '', 
                 borderWidth: dataFile ? '8px' : '3px',
               }}/>
-              <input {...getInputProps()} />
+              <input {...getInputProps()} disabled={isDisabled} />
             </div>
           </section>
         )}
       </Dropzone>
+      }
+      {
+        isDisabled && 
+        <div id='dentro'>
+          <CheckCircleOutlineOutlinedIcon sx={{
+                bg: red[500],
+               // height: '100px',
+                fontSize: '200px',
+                borderStyle: dataFile ? 'groove' : 'dashed',
+                borderColor: dataFile ? themePalette.NARANJACORE : '', 
+                borderWidth: dataFile ? '8px' : '3px',}}/>
+        </div>
+      }
       </div>
       </Grid>
 
