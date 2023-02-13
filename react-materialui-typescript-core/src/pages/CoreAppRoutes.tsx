@@ -49,6 +49,8 @@ function AppRoutes() {
   const [selectedOption2, setSelectedOption2] = useState<newTipoDoc | newNumLev | newProDucto | newInversionista | null>(null);
   const [selectedOption3, setSelectedOption3] = useState<newTipoDoc | newNumLev | newProDucto | newInversionista | null>(null);
   const [selectedOption4, setSelectedOption4] = useState<newTipoDoc | newNumLev | newProDucto | newInversionista | null>(null);
+  const [email , setEmail] = useState<string | null>(null);
+  const [password, setPassword] = useState<string | null>(null);
   return (
     <SelectionContext.Provider
       value={{
@@ -60,6 +62,10 @@ function AppRoutes() {
         setSelectedOption3,
         selectedOption4,
         setSelectedOption4,
+        email,
+        setEmail,
+        password,
+        setPassword,
       }}
     >
     <Router>

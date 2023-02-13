@@ -112,10 +112,10 @@ const UploadFiles: React.FC = () => {
         </Grid>
       }
       <Grid item sx={{display: 'flex'}}>
-      <h6>persona valor: {selectedOption1?.id}</h6>
-      <h6>doc valor: {selectedOption2?.id}</h6>
-      <h6>producto valor: {selectedOption3?.id}</h6>
-      <h6>lev valor: {selectedOption4?.id}</h6>
+      <h3>persona valor: {selectedOption1?.id}</h3>
+      <h3>doc valor: {selectedOption2?.id}</h3>
+      <h3>producto valor: {selectedOption3?.id}</h3>
+      <h3>lev valor: {selectedOption4?.id}</h3>
       
       </Grid>
       <h1>Fileupload Component</h1>

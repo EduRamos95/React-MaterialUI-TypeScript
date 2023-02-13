@@ -31,7 +31,7 @@ export const LatMenu: React.FC<{}> = ():JSX.Element => {
     
     const FilterItems:Array<filter> = [
         {
-            text: 'Persona',
+            text: 'Inversionista',
             icon: <PersonIcon />,
             path: '/',
             tabla: newDataInversionista,

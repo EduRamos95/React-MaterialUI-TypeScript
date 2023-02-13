@@ -14,6 +14,10 @@ interface SelectionContextType {
     setSelectedOption2: React.Dispatch<React.SetStateAction<newTipoDoc | newNumLev | newProDucto | newInversionista | null>>;
     setSelectedOption3: React.Dispatch<React.SetStateAction<newTipoDoc | newNumLev | newProDucto | newInversionista | null>>;
     setSelectedOption4: React.Dispatch<React.SetStateAction<newTipoDoc | newNumLev | newProDucto | newInversionista | null>>;
+    email: string | null;
+    password: string | null;
+    setEmail: React.Dispatch<React.SetStateAction<string | null>>;
+    setPassword: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
 export const SelectionContext = React.createContext<SelectionContextType>({
@@ -25,4 +29,8 @@ export const SelectionContext = React.createContext<SelectionContextType>({
     setSelectedOption2: () => {},
     setSelectedOption3: () => {},
     setSelectedOption4: () => {},
+    email: null,
+    password: null,
+    setEmail: () => {},
+    setPassword: () => {},
 });
