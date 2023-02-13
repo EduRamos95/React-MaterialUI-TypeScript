@@ -1,4 +1,4 @@
-import React from "react"
+import React , {useContext} from "react"
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -26,11 +26,23 @@ import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
 //import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { redirect, Link, useNavigate } from "react-router-dom";
+import { SelectionContext } from '../context/SelectionContext';
+import { green, grey, red } from "@mui/material/colors";
+
+
 export const NavBar: React.FunctionComponent<{}> = () => {
-    
+    const location = useLocation();
+    const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedOption4 } = useContext(SelectionContext);
     // const pages = ['Actualizar', 'Busqueda', 'Carga Archivo'];
     const navigate = useNavigate();
+    const setFilter = ():void => {
+        setSelectedOption1(null)
+        setSelectedOption2(null)
+        setSelectedOption3(null)
+        setSelectedOption4(null)
+    }
     const pages = [
         {
             name: 'Actualizar',
@@ -149,7 +161,10 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 }}
             >
                 {pages.map((page) => (
-                <MenuItem key={page.name} onClick={() => navigate(page.ruta)}>
+                <MenuItem 
+                  key={page.name} 
+                  onClick={() => {return(setFilter(), navigate(page.ruta))} } 
+                  disabled={location.pathname === page.ruta}>
                     <ListItemIcon>
                         {page.sticon}
                     </ListItemIcon>
@@ -198,15 +213,17 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 }}>
             {pages.map((page) => (
                 <Button
+                id={location.pathname === page.ruta ? 'nuevo':''}
                 startIcon={page.sticon}
-                color='info'
+                color={location.pathname === page.ruta ?'success':'info'}
                 variant='contained'
                 key={page.name}
                 value={page.ruta}
-                onClick={() => navigate(page.ruta)}
+                onClick={() => {return(setFilter(), navigate(page.ruta))}}
+                disabled={location.pathname === page.ruta}
                 sx={{ 
                     my: 2,
-                    color: 'white', 
+                    //color: 'white', 
                     display: 'flex',
                     padding: '0.5 em 2em',
                     margin: '0em 0.5em',
@@ -243,7 +260,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 onClose={handleCloseUserMenu}
             >
                 {settings.map((setting) => (
-                <MenuItem key={setting.name} onClick={() => navigate(setting.ruta)}>
+                <MenuItem key={setting.name} onClick={() => {return(setFilter(), navigate(setting.ruta))}} disabled={location.pathname === setting.ruta}>
                     <ListItemIcon>
                         {setting.sticon}
                     </ListItemIcon>

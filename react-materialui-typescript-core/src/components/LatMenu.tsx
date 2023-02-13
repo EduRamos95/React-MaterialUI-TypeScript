@@ -18,7 +18,7 @@ import {newDataProduct , newProDucto} from '../assets/data_producto'
 import {newDataLevEmi , newNumLev} from '../assets/data_levantamiento'
 import {newDataDocumento , newTipoDoc} from '../assets/data_documento'
 //import { display } from '@mui/system';
- import { SelectionContext } from '../context/SelectionContext';
+import { SelectionContext } from '../context/SelectionContext';
 
 
 export const LatMenu: React.FC<{}> = ():JSX.Element => {
@@ -59,7 +59,7 @@ export const LatMenu: React.FC<{}> = ():JSX.Element => {
 const { selectedOption1, selectedOption2, selectedOption3, selectedOption4 } = useContext(SelectionContext);
 const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedOption4 } = useContext(SelectionContext);
 // captar datos dependiendo evento onChange
- //const [selectedOption1, setSelectedOption1] = useState<newTipoDoc | newNumLev | newProDucto | newInversionista | null>(null);
+ //const [selectedOption1, setSelectedOption1] = useState(null);
  //const [selectedOption2, setSelectedOption2] = useState<newTipoDoc | newNumLev | newProDucto | newInversionista | null>(null);
  //const [selectedOption3, setSelectedOption3] = useState<newTipoDoc | newNumLev | newProDucto | newInversionista | null>(null);
  //const [selectedOption4, setSelectedOption4] = useState<newTipoDoc | newNumLev | newProDucto | newInversionista | null>(null);

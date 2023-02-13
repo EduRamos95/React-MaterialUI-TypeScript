@@ -107,10 +107,10 @@ const { selectedOption1, selectedOption2, selectedOption3, selectedOption4 } = u
       </Grid>
       </Grid>
       <h1 style={{ display:'flex' }}>TableBusqueda Component</h1>
-      <h4>{selectedOption1?.id}</h4>
-      <h4>{selectedOption2?.id}</h4>
-      <h4>{selectedOption3?.id}</h4>
-      <h4>{selectedOption4?.id}</h4>
+      <h4>persona valor: {selectedOption1?.id}</h4>
+      <h4>doc valor: {selectedOption2?.id}</h4>
+      <h4>producto valor: {selectedOption3?.id}</h4>
+      <h4>lev valor: {selectedOption4?.id}</h4>
     </Container>
     
   );

@@ -16,3 +16,8 @@ code {
   height: 50px;
   width: auto;
 }
+
+#nuevo {
+  color: white;
+  background-color: black;
+}

@@ -46,19 +46,15 @@ const theme = createTheme ({
         neutral:{
             main: themePalette.BLACKCORE,
             contrastText: '#fff',
-        }
-        
+        },
     },
     typography: {
         fontFamily: themePalette.FONT_GLOBAL,
     },
     // components: {
     //     MuiButton: {
-    //         defaultProps: {
-    //             style: {
-    //                 textTransform: "none",
-    //                 boxShadow: "none",
-    //                 borderRadius: "0.5em",
+    //         MuiDisable: {
+                
     //             }
     //         }
     //     }
@@ -89,6 +85,16 @@ declare module '@mui/material/styles' {
     }
   }
 
+  // const theme = createMuiTheme({
+  //   overrides: {
+  //     MuiButton: {
+  //       disabled: {
+  //         backgroundColor: 'red',
+  //         color: 'white',
+  //       },
+  //     },
+  //   },
+  // });
   // declare module '@mui/icons-material/DocumentScanner'{
   //   interface IconPropsSizeOverrides {
   //     neutral: ;

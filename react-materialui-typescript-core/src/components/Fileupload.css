@@ -21,7 +21,7 @@
 }
 
 #filedrop>*{
-    margin: 16px;
+    margin: 5px;
     width: 200px;
     height: 200px;
     display: flex;
