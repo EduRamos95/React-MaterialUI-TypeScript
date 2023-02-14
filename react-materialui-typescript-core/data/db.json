@@ -1,0 +1,266 @@
+{
+    "tipo de documento": [
+        {
+            "id": "1",
+            "tipo": "Contrato"
+        },
+        {
+            "id": 2,
+            "tipo": "Anexo 1"
+        },
+        {
+            "id": 3,
+            "tipo": "Anexo 2"
+        },
+        {
+            "id": 4,
+            "tipo": "Ficha Cliente"
+        }
+    ],
+    "levantamiento":[
+        {
+            "id": 1,
+            "levEmi": 1
+        },
+        {
+            "id": 2,
+            "levEmi": 2
+        },
+        {
+            "id": 3,
+            "levEmi": 3
+        },
+        {
+            "id": 4,
+            "levEmi": 4
+        },
+        {
+            "id": 5,
+            "levEmi": 5
+        },
+        {
+            "id": 6,
+            "levEmi": 6
+        },
+        {
+            "id": 7,
+            "levEmi": 7
+        },
+        {
+            "id": 8,
+            "levEmi": 8
+        },
+        {
+            "id": 9,
+            "levEmi": 9
+        },
+        {
+            "id": 10,
+            "levEmi": 10
+        },
+        {
+            "id": 11,
+            "levEmi": 11
+        },
+        {
+            "id": 12,
+            "levEmi": 12
+        },
+        {
+            "id": 13,
+            "levEmi": 13
+        },
+        {
+            "id": 14,
+            "levEmi": 14
+        },
+        {
+            "id": 15,
+            "levEmi": 15
+        },
+        {
+            "id": 17,
+            "levEmi": 17
+        },
+        {
+            "id": 18,
+            "levEmi": 18
+        },
+        {
+            "id": 19,
+            "levEmi": 19
+        },
+        {
+            "id": 20,
+            "levEmi": 20
+        }
+    ],
+   "producto": [
+        {
+            "id": 1,
+            "nombre": "Fondo Edifica Core - Renta Fija"
+        },
+        {
+            "id": 2,
+            "nombre": "Fondo Edifica Core"
+        },
+        {
+            "id": 3,
+            "nombre": "Fondo de Derivados Financieros"
+        },
+        {
+            "id": 4,
+            "nombre": "Fondo Edifica Core II"
+        },
+        {
+            "id": 5,
+            "nombre": "Fondo Praedium"
+        },
+        {
+            "id": 6,
+            "nombre": "Bonos Corporativos Praedium"
+        },
+        {
+            "id": 7,
+            "nombre": "Fondo TLR"
+        },
+        {
+            "id": 8,
+            "nombre": "Fondo Performance"
+        },
+        {
+            "id": 9,
+            "nombre": "Fondo Seguridad Core"
+        },
+        {
+            "id": 10,
+            "nombre": "Bono FEC II"
+        },
+        {
+            "id": 11,
+            "nombre": "Papeles Comerciales - FEC II"
+        },
+        {
+            "id": 12,
+            "nombre": "Fondo Equilibrio"
+        },
+        {
+            "id": 13,
+            "nombre": "Fondo Oportunidad"
+        },
+        {
+            "id": 14,
+            "nombre": "Bono USA"
+        },
+        {
+            "id": 15,
+            "nombre": "Bono TRD Artline"
+        },
+        {
+            "id": 16,
+            "nombre": "FDI 1A"
+        },
+        {
+            "id": 17,
+            "nombre": "FDI 1B"
+        },
+        {
+            "id": 18,
+            "nombre": "Fondo Edifica Global"
+        },
+        {
+            "id": 19,
+            "nombre": "Fondo Edifica V"
+        },
+        {
+            "id": 20,
+            "nombre": "FSPD"
+        },
+        {
+            "id": 21,
+            "nombre": "FSPEVC"
+        },
+        {
+            "id": 22,
+            "nombre": "FIRE"
+        },
+        {
+            "id": 23,
+            "nombre": "FSGOP"
+        },
+        {
+            "id": 24,
+            "nombre": "Fondo Sabbi Real Estate"
+        },
+        {
+            "id": 25,
+            "nombre": "BSGOP"
+        }
+    ],
+    "inversionista" : [
+        {
+            "id": 3,
+            "nombre": "Juan Manuel",
+            "apPat": "Villa",
+            "apMat": "Rushton", 
+            "tipoDoc": "DNI",
+            "numDoc": 908070456
+        },
+        {
+            "id": 4,
+            "nombre": "Rodrigo Alessandro",
+            "apPat": "De Luzio",
+            "apMat": "Poquioma", 
+            "tipoDoc": "DNI",
+            "numDoc": 908060154
+        },
+        {
+            "id": 5,
+            "nombre": "Elisa Pamela",
+            "apPat": "LTD",
+            "apMat": "Calderon", 
+            "tipoDoc": "CARNET",
+            "numDoc": 917051362
+        },
+        {
+            "id": 6,
+            "nombre": "Mardely del Rosario",
+            "apPat": "Alfaro",
+            "apMat": "Stanic", 
+            "tipoDoc": "DNI",
+            "numDoc": 947071556
+        },
+        {
+            "id": 7,
+            "nombre": "Luis Antonio",
+            "apPat": "Velasco",
+            "apMat": "Marcelo", 
+            "tipoDoc": "CARNET",
+            "numDoc": 947032556
+        },
+        {
+            "id": 8,
+            "nombre": "Nataly",
+            "apPat": "Guanilo",
+            "apMat": "Casabonne", 
+            "tipoDoc": "DNI",
+            "numDoc": 987654321
+        },
+        {
+            "id": 9,
+            "nombre": "Ericka Sofia",
+            "apPat": "Rossi de Malaga",
+            "apMat": "Flores", 
+            "tipoDoc": "DNI",
+            "numDoc": 654987321
+        },
+        {
+            "id": 10,
+            "nombre": "Oscar Rodolfo",
+            "apPat": "Picasso",
+            "apMat": "Jara", 
+            "tipoDoc": "DNI",
+            "numDoc": 987123654
+        }
+    ]
+}
