@@ -36,4 +36,10 @@ export function convertirDOC(doc:tipoDoc ): newTipoDoc {
     };
 }
 
+export function converDocM(docM:tipoDoc[]): newTipoDoc[] {
+    return (
+        docM.map( item => convertirDOC(item))
+    )
+}
+
 export const newDataDocumento:Array<newTipoDoc> = dataDocumento.map((doct:tipoDoc):newTipoDoc => convertirDOC(doct));

@@ -12,7 +12,7 @@ import { SelectionContext } from '../context/SelectionContext';
 import { margin, palette } from '@mui/system';
 import { themePalette } from '../config/theme.condig';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
-
+import { motion , AnimatePresence } from "framer-motion";
 
 const UploadFiles: React.FC = () => {
   
@@ -44,6 +44,17 @@ const UploadFiles: React.FC = () => {
   
   const { selectedOption1, selectedOption2, selectedOption3, selectedOption4 } = useContext(SelectionContext);
 
+  const initialTransition = {
+    duration: 1,
+    delay: 0.5,
+    ease: [0, 0.71, 0.2, 1.01]
+  };
+  
+  const exitTransition = {
+    duration: 0.50,
+    delay:0,
+    ease: [0, 0.71, 0.2, 1.01]
+  };
 
 
   return (
@@ -53,9 +64,18 @@ const UploadFiles: React.FC = () => {
       alignItems: 'center',
       flexDirection: 'column',
       }}>
+      
       <Grid item sx={{display: 'flex'}}>
-      <div id='filedrop'>
-        { !isDisabled &&
+      <AnimatePresence>
+      { 1 && <motion.div
+      layout
+      key='hijo1'
+      initial={{ opacity: 0, scale: 0.2 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.2 }}
+      transition={!isDisabled ? exitTransition : initialTransition} 
+      id='filedrop'>
+    
       <Dropzone onDrop={onDrop} disabled={isDisabled} onDragOver={event => {
         if (isDisabled) {
         event.preventDefault();
@@ -64,23 +84,59 @@ const UploadFiles: React.FC = () => {
         {({ getRootProps, getInputProps }) => (
           <section id='secdrop'>
             <div id='dentro' {...getRootProps()}>
-              <UploadFileIcon sx={{
-                bg: red[500],
-               // height: '100px',
-                fontSize: '200px',
-                borderStyle: dataFile ? 'groove' : 'dashed',
-                borderColor: dataFile ? themePalette.NARANJACORE : '', 
-                borderWidth: dataFile ? '8px' : '3px',
-              }}/>
-              <input {...getInputProps()} disabled={isDisabled} />
+            <AnimatePresence>
+                {
+                  !isDisabled ? (
+                  <motion.div 
+                  initial={{ opacity: 0, scale: 0.2 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.2 }}
+                  transition={isDisabled ? exitTransition : initialTransition}>
+                  <UploadFileIcon key='upload' sx={{
+                    bg: red[500],
+                   // height: '100px',
+                    fontSize: '200px',
+                    borderStyle: dataFile ? 'groove' : 'dashed',
+                    borderColor: dataFile ? themePalette.NARANJACORE : '', 
+                    borderWidth: dataFile ? '3px' : '3px',
+                  }} />
+                  </motion.div>) : (
+                  <motion.div 
+                  initial={{ opacity: 0, scale: 0.2 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.2 }}
+                  transition={!isDisabled ? exitTransition : initialTransition}>
+                  <CheckCircleOutlineOutlinedIcon sx={{
+                    bg: red[500],
+                   // height: '100px',
+                    fontSize: '200px',
+                    borderStyle: dataFile ? 'groove' : 'dashed',
+                    borderColor: dataFile ? themePalette.NARANJACORE : '', 
+                    borderWidth: dataFile ? '3px' : '3px',}}/>
+                    </motion.div>)
+                    
+                }
+              </AnimatePresence>
+              
+              <input key='inputs' {...getInputProps()} disabled={isDisabled} />
             </div>
           </section>
         )}
       </Dropzone>
+      </motion.div>          
       }
-      {
+      </AnimatePresence>
+      </Grid>
+      {/* {
         isDisabled && 
-        <div id='dentro'>
+        <motion.div
+        key='hijo2'
+        layout
+        initial={{ opacity: 0, scale: 0.2 }}
+        animate={{ opacity: 0.75, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.2 }}
+        transition={isDisabled ? exitTransition : initialTransition}
+        id='dentro'>
           <CheckCircleOutlineOutlinedIcon sx={{
                 bg: red[500],
                // height: '100px',
@@ -88,11 +144,11 @@ const UploadFiles: React.FC = () => {
                 borderStyle: dataFile ? 'groove' : 'dashed',
                 borderColor: dataFile ? themePalette.NARANJACORE : '', 
                 borderWidth: dataFile ? '8px' : '3px',}}/>
-        </div>
-      }
-      </div>
-      </Grid>
-
+        </motion.div>
+      } */}
+      {/* </AnimatePresence>
+      </Grid> */}
+      
       <Grid item sx={{display: 'flex'}}>
       <Button variant='contained'
         sx={{

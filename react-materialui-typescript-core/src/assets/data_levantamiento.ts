@@ -96,4 +96,10 @@ export function convertirLEV(lev:numLev ): newNumLev {
     };
 }
 
+export function converLevM(levM:numLev[]): newNumLev[] {
+    return (
+        levM.map( item => convertirLEV(item))
+    )
+}
+
 export const newDataLevEmi:Array<newNumLev> = dataLevant_Emi.map((levt:numLev):newNumLev => convertirLEV(levt));

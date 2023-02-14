@@ -109,4 +109,10 @@ export function convertirInver(inver: inversionista): newInversionista {
     };
 }
 
+export function converInverM(inverM: inversionista[]): newInversionista[] {
+    return (
+        inverM.map( item => convertirInver(item))
+    )
+}
+
 export const newDataInversionista:Array<newInversionista> = dataInversionista.map((inVer:inversionista):newInversionista => convertirInver(inVer));

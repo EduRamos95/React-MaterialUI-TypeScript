@@ -120,4 +120,10 @@ export function convertirProducto(pro:proDucto ): newProDucto {
     };
 }
 
+export function converProM(proM:proDucto[]): newProDucto[] {
+    return (
+        proM.map( item => convertirProducto(item))
+    )
+}
+
 export const newDataProduct:Array<newProDucto> = dataProducto.map((prod:proDucto):newProDucto => convertirProducto(prod));

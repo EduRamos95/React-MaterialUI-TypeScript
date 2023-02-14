@@ -1,7 +1,7 @@
 {
-    "tipo de documento": [
+    "tipo_documento": [
         {
-            "id": "1",
+            "id": 1,
             "tipo": "Contrato"
         },
         {
@@ -15,6 +15,10 @@
         {
             "id": 4,
             "tipo": "Ficha Cliente"
+        },
+        {
+            "id": 5,
+            "tipo": "API DOC"
         }
     ],
     "levantamiento":[
@@ -93,6 +97,10 @@
         {
             "id": 20,
             "levEmi": 20
+        },
+        {
+            "id": 20,
+            "levEmi": 471
         }
     ],
    "producto": [
@@ -195,6 +203,10 @@
         {
             "id": 25,
             "nombre": "BSGOP"
+        },
+        {
+            "id": 25,
+            "nombre": "API FONDO"
         }
     ],
     "inversionista" : [
@@ -259,6 +271,14 @@
             "nombre": "Oscar Rodolfo",
             "apPat": "Picasso",
             "apMat": "Jara", 
+            "tipoDoc": "DNI",
+            "numDoc": 987123654
+        },
+        {
+            "id": 11,
+            "nombre": "API Edu",
+            "apPat": "Ramos",
+            "apMat": "Maldonado", 
             "tipoDoc": "DNI",
             "numDoc": 987123654
         }
