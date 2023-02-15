@@ -47,16 +47,19 @@ export const NavBar: React.FunctionComponent<{}> = () => {
         {
             name: 'Actualizar',
             ruta: '/user',
+            keyChild1: 'actualizar',
             sticon: <SensorOccupiedIcon />,
         },
         {
             name: 'Busqueda',
             ruta: '/search',
+            keyChild1: 'busqueda',
             sticon: <ManageSearchIcon />,
         },
         {
             name: 'Carga Archivo',
             ruta: '/file',
+            keyChild1: 'carga_archivo',
             sticon: <CloudUploadOutlinedIcon />,
         }
     ]
@@ -66,6 +69,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
         {
             name: 'Profile',
             ruta: '/profile',
+            keyChild1: 'profile',
             sticon: <AccountBoxOutlinedIcon />,
         },
         // {
@@ -76,6 +80,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
         {
             name: 'Logout',
             ruta: '/login',
+            keyChild1: 'logout',
             sticon: <LogoutIcon />,
         }
     ]
@@ -162,13 +167,14 @@ export const NavBar: React.FunctionComponent<{}> = () => {
             >
                 {pages.map((page) => (
                 <MenuItem 
+                  id={location.pathname === page.ruta ? 'menuItem':''}
                   key={page.name} 
                   onClick={() => {return(setFilter(), navigate(page.ruta))} } 
                   disabled={location.pathname === page.ruta}>
-                    <ListItemIcon>
+                    <ListItemIcon key={page.keyChild1 + 'Icon'} id={location.pathname === page.ruta ? 'menuBarIcon':''}>
                         {page.sticon}
                     </ListItemIcon>
-                    <Typography textAlign="center">{page.name}</Typography>
+                    <Typography key={page.keyChild1} id={location.pathname === page.ruta ? 'menuBarText':''} textAlign="center">{page.name}</Typography>
                 </MenuItem>
                 ))}
             </Menu>
@@ -260,7 +266,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 onClose={handleCloseUserMenu}
             >
                 {settings.map((setting) => (
-                <MenuItem key={setting.name} onClick={() => {return(setFilter(), navigate(setting.ruta))}} disabled={location.pathname === setting.ruta}>
+                <MenuItem id={location.pathname === setting.ruta ? 'menuItem':''} key={setting.name} onClick={() => {return(setFilter(), navigate(setting.ruta))}} disabled={location.pathname === setting.ruta}>
                     <ListItemIcon>
                         {setting.sticon}
                     </ListItemIcon>

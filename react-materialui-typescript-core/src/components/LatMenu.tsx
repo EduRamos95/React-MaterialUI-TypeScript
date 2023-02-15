@@ -6,7 +6,7 @@ import ListItemText from '@mui/material/ListItemText';
 import PersonIcon from '@mui/icons-material/Person';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import DescriptionIcon from '@mui/icons-material/Description';
-import { CircularProgress, Grid, ListItem } from '@mui/material';
+import { Box, CircularProgress, Grid, LinearProgress, ListItem } from '@mui/material';
 //import { red } from '@mui/material/colors';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
@@ -168,10 +168,13 @@ return (
                         ...params.InputProps,
                         endAdornment: (
                         <React.Fragment>
-                            {loadingAPI ? <CircularProgress color="inherit" size={20} /> : null}
+                            {/* {loadingAPI ? <CircularProgress color="inherit" size={20} /> : null} */}
+                            {loadingAPI ? <Box sx={{ width: '100%' }}>
+                                <LinearProgress color="inherit" />
+                                </Box> : null}
                             {params.InputProps.endAdornment}
                         </React.Fragment>
-                        ),
+                        )
                         }}/>
                     )
                 }}

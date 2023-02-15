@@ -21,3 +21,17 @@ code {
   color: white;
   background-color: black;
 }
+
+#menuBarIcon{
+  color: rgb(0, 0, 0, 1);
+}
+
+#menuBarText{
+  color: rgb(0, 0, 0, 1);
+}
+
+#menuItem{
+  color: rgb(0, 0, 0, 1);
+  opacity: 1;
+  background-color: rgb(250, 148, 51,0.6);
+}
