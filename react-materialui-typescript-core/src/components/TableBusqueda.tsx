@@ -70,7 +70,7 @@ const { selectedOption1, selectedOption2, selectedOption3, selectedOption4 } = u
         width: 'inherit',
       }}>
         <Button onClick={handleShow} variant='contained' color='primary' sx={{mt:1, mb:1, width:'100%'}}  startIcon={<FilterAltOutlinedIcon />}>
-        <Typography variant="h5" component="h2">Filtar</Typography>
+        <Typography variant="h5" component="h2">Filtrar</Typography>
         </Button>
       </Grid>
 

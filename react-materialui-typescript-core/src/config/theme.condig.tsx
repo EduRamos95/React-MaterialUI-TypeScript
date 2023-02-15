@@ -25,7 +25,7 @@ const theme = createTheme ({
     palette: {
         mode: 'light',
         background: {
-            default: themePalette.CELESTECORE,
+            default: themePalette.WHITECORE,
         },
         secondary: {
             light:themePalette.CELESTECORELIGTH,

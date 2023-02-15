@@ -104,7 +104,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
     };
 
     return (
-    <AppBar position="static">
+    <AppBar color='secondary' position="static">
         <Container maxWidth="lg">
         <Toolbar disableGutters sx={{
             display: 'flex',
