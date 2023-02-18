@@ -9,26 +9,7 @@ export interface newTipoDoc{
     tipo: string,
 }
 
-export const dataDocumento:Array<tipoDoc> = [
-    {
-        id: 1,
-        tipo: 'Contrato'
-    },
-    {
-        id: 2,
-        tipo: 'Anexo 1'
-    },
-    {
-        id: 3,
-        tipo: 'Anexo 2'
-    },
-    {
-        id: 4,
-        tipo: 'Ficha Cliente'
-    }
-]
-
-export function convertirDOC(doc:tipoDoc ): newTipoDoc {
+export function convDOC(doc:tipoDoc ): newTipoDoc {
     return {
       id: doc.id,
       name: doc.tipo,
@@ -36,10 +17,31 @@ export function convertirDOC(doc:tipoDoc ): newTipoDoc {
     };
 }
 
-export function converDocM(docM:tipoDoc[]): newTipoDoc[] {
+export function convDocM(docM:tipoDoc[]): newTipoDoc[] {
     return (
-        docM.map( item => convertirDOC(item))
+        docM.map( item => convDOC(item))
     )
 }
 
-export const newDataDocumento:Array<newTipoDoc> = dataDocumento.map((doct:tipoDoc):newTipoDoc => convertirDOC(doct));
+// export const dataDocumento:Array<tipoDoc> = [
+//     {
+//         id: 1,
+//         tipo: 'Contrato'
+//     },
+//     {
+//         id: 2,
+//         tipo: 'Anexo 1'
+//     },
+//     {
+//         id: 3,
+//         tipo: 'Anexo 2'
+//     },
+//     {
+//         id: 4,
+//         tipo: 'Ficha Cliente'
+//     }
+// ]
+
+
+
+// export const newDataDocumento:Array<newTipoDoc> = dataDocumento.map((doct:tipoDoc):newTipoDoc => convertirDOC(doct));

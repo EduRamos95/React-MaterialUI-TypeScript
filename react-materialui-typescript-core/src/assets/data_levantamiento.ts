@@ -1,105 +1,107 @@
-export interface numLev{
+export interface caTegoria{
     id: number,
-    levEmi: number,
+    descripcion: string,
 }
 
-export interface newNumLev{
+export interface newCategoria{
     id: number,
     name: string,
-    levEmi: number,
+    descripcion: string,
 }
 
-export const dataLevant_Emi:Array<numLev> = [
-    {
-        id: 1,
-        levEmi: 1
-    },
-    {
-        id: 2,
-        levEmi: 2
-    },
-    {
-        id: 3,
-        levEmi: 3
-    },
-    {
-        id: 4,
-        levEmi: 4
-    },
-    {
-        id: 5,
-        levEmi: 5
-    },
-    {
-        id: 6,
-        levEmi: 6
-    },
-    {
-        id: 7,
-        levEmi: 7
-    },
-    {
-        id: 8,
-        levEmi: 8
-    },
-    {
-        id: 9,
-        levEmi: 9
-    },
-    {
-        id: 10,
-        levEmi: 10
-    },
-    {
-        id: 11,
-        levEmi: 11
-    },
-    {
-        id: 12,
-        levEmi: 12
-    },
-    {
-        id: 13,
-        levEmi: 13
-    },
-    {
-        id: 14,
-        levEmi: 14
-    },
-    {
-        id: 15,
-        levEmi: 15
-    },
-    {
-        id: 17,
-        levEmi: 17
-    },
-    {
-        id: 18,
-        levEmi: 18
-    },
-    {
-        id: 19,
-        levEmi: 19
-    },
-    {
-        id: 20,
-        levEmi: 20
-    }
-]
-
-export function convertirLEV(lev:numLev ): newNumLev {
+export function convCate(lev:caTegoria ): newCategoria {
     return {
       id: lev.id,
-      name: String(lev.levEmi),
-      levEmi: lev.levEmi,
+      name: lev.descripcion,
+      descripcion: lev.descripcion,
     };
 }
 
-export function converLevM(levM:numLev[]): newNumLev[] {
+export function convCateM(levM:caTegoria[]): newCategoria[] {
     return (
-        levM.map( item => convertirLEV(item))
+        levM.map( item => convCate(item))
     )
 }
 
-export const newDataLevEmi:Array<newNumLev> = dataLevant_Emi.map((levt:numLev):newNumLev => convertirLEV(levt));
+// export const dataLevant_Emi:Array<tCategoria> = [
+//     {
+//         id: 1,
+//         descripcion: 1
+//     },
+//     {
+//         id: 2,
+//         descripcion: 2
+//     },
+//     {
+//         id: 3,
+//         descripcion: 3
+//     },
+//     {
+//         id: 4,
+//         descripcion: 4
+//     },
+//     {
+//         id: 5,
+//         descripcion: 5
+//     },
+//     {
+//         id: 6,
+//         descripcion: 6
+//     },
+//     {
+//         id: 7,
+//         descripcion: 7
+//     },
+//     {
+//         id: 8,
+//         descripcion: 8
+//     },
+//     {
+//         id: 9,
+//         descripcion: 9
+//     },
+//     {
+//         id: 10,
+//         descripcion: 10
+//     },
+//     {
+//         id: 11,
+//         descripcion: 11
+//     },
+//     {
+//         id: 12,
+//         descripcion: 12
+//     },
+//     {
+//         id: 13,
+//         descripcion: 13
+//     },
+//     {
+//         id: 14,
+//         descripcion: 14
+//     },
+//     {
+//         id: 15,
+//         descripcion: 15
+//     },
+//     {
+//         id: 17,
+//         descripcion: 17
+//     },
+//     {
+//         id: 18,
+//         descripcion: 18
+//     },
+//     {
+//         id: 19,
+//         descripcion: 19
+//     },
+//     {
+//         id: 20,
+//         descripcion: 20
+//     }
+// ]
+
+
+
+// export const newDataLevEmi:Array<tNewCategoria> = dataLevant_Emi.map((levt:tCategoria):tNewCategoria => convCate(levt));

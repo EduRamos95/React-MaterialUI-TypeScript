@@ -1,19 +1,19 @@
 import React from 'react';
 import {newInversionista} from '../assets/data_inversionistas'
 import {newProDucto} from '../assets/data_producto'
-import {newNumLev} from '../assets/data_levantamiento'
+import {newCategoria} from '../assets/data_levantamiento'
 import {newTipoDoc} from '../assets/data_documento'
 
 
 interface SelectionContextType {
-    selectedOption1: newTipoDoc | newNumLev | newProDucto | newInversionista | null;
-    selectedOption2: newTipoDoc | newNumLev | newProDucto | newInversionista | null;
-    selectedOption3: newTipoDoc | newNumLev | newProDucto | newInversionista | null;
-    selectedOption4: newTipoDoc | newNumLev | newProDucto | newInversionista | null;
-    setSelectedOption1: React.Dispatch<React.SetStateAction<newTipoDoc | newNumLev | newProDucto | newInversionista | null>>;
-    setSelectedOption2: React.Dispatch<React.SetStateAction<newTipoDoc | newNumLev | newProDucto | newInversionista | null>>;
-    setSelectedOption3: React.Dispatch<React.SetStateAction<newTipoDoc | newNumLev | newProDucto | newInversionista | null>>;
-    setSelectedOption4: React.Dispatch<React.SetStateAction<newTipoDoc | newNumLev | newProDucto | newInversionista | null>>;
+    selectedOption1: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
+    selectedOption2: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
+    selectedOption3: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
+    selectedOption4: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
+    setSelectedOption1: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
+    setSelectedOption2: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
+    setSelectedOption3: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
+    setSelectedOption4: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
     email: string | null;
     password: string | null;
     setEmail: React.Dispatch<React.SetStateAction<string | null>>;
