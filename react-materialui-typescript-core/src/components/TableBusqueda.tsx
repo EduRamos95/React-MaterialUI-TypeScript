@@ -16,27 +16,54 @@ const { selectedOption1, selectedOption2, selectedOption3, selectedOption4 } = u
 //export default function AppBusqueda(){
 
   const columns: GridColDef[] = [
-    { field: 'id', headerName: 'ID', width: 70 },
-    { field: 'firstName', headerName: 'First name', width: 130 },
-    { field: 'lastName', headerName: 'Last name', width: 130 },
+    
+    
+    { field: 'numDoc', headerName: 'Nro. Identidad', width: 140,},
     {
-      field: 'age',
-      headerName: 'Age',
-      type: 'number',
-      width: 90,
-    },
-    {
-      field: 'fullName',
-      headerName: 'Full name',
-      description: 'This column has a value getter and is not sortable.',
-      sortable: false,
-      width: 160,
+      field: 'nombre_completo',
+      headerName: 'Nombre Completo',
+      width: 260,
       valueGetter: (params: GridValueGetterParams) =>
-        `${params.row.firstName || ''} ${params.row.lastName || ''}`,
+        `${params.row.apPat || ''} ${params.row.apMat || ''}, ${params.row.apMat || ''}`,
     },
   ];
 
   const rows = [
+        {
+          // persona
+          id: 3,
+          nombre: 'Juan Manuel',
+          apPat: 'Villa',
+          apMat: 'Rushton', 
+          tipoDoc: 2,
+          numDoc: "908070456",
+          // producto
+          nombrePro: "Fondo Edifica Core",
+          // levantamiento
+
+          // documento
+          tipo: "Contrato",
+          
+        },
+        {
+            id: 4,
+            nombre: 'Rodrigo Alessandro',
+            apPat: 'De Luzio',
+            apMat: 'Poquioma', 
+            tipoDoc: 1,
+            numDoc: "908060154",
+        },
+        {
+            id: 5,
+            nombre: 'Elisa Pamela',
+            apPat: 'LTD',
+            apMat: 'Calderon', 
+            tipoDoc: 1,
+            numDoc: "917051362",
+        }
+  ]
+
+  const rows2 = [
     { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
     { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
     { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
