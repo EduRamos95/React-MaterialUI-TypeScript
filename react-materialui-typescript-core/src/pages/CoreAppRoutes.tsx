@@ -45,10 +45,14 @@ const CoreRoute: core_route[] = [
 ]
 
 function AppRoutes() {
-  const [selectedOption1, setSelectedOption1] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
-  const [selectedOption2, setSelectedOption2] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
-  const [selectedOption3, setSelectedOption3] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
-  const [selectedOption4, setSelectedOption4] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
+//   const [selectedOption1, setSelectedOption1] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
+//   const [selectedOption2, setSelectedOption2] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
+//   const [selectedOption3, setSelectedOption3] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
+//   const [selectedOption4, setSelectedOption4] = useState<newTipoDoc | newCategoria | newProDucto | newInversionista | null>(null);
+  const [selectedOption1, setSelectedOption1] = useState<newInversionista | null>(null);
+  const [selectedOption2, setSelectedOption2] = useState<newTipoDoc | null>(null);
+  const [selectedOption3, setSelectedOption3] = useState<newProDucto | null>(null);
+  const [selectedOption4, setSelectedOption4] = useState<newCategoria | null>(null);
   const [email , setEmail] = useState<string | null>(null);
   const [password, setPassword] = useState<string | null>(null);
   return (

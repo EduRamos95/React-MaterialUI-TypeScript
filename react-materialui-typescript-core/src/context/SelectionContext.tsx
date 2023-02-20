@@ -6,14 +6,14 @@ import {newTipoDoc} from '../assets/data_documento'
 
 
 interface SelectionContextType {
-    selectedOption1: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
-    selectedOption2: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
-    selectedOption3: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
-    selectedOption4: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
-    setSelectedOption1: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
-    setSelectedOption2: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
-    setSelectedOption3: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
-    setSelectedOption4: React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
+    selectedOption1: newInversionista | null;
+    selectedOption2: newTipoDoc| null;
+    selectedOption3: newProDucto | null;
+    selectedOption4: newCategoria | null;
+    setSelectedOption1: React.Dispatch<React.SetStateAction<newInversionista | null>>;
+    setSelectedOption2: React.Dispatch<React.SetStateAction<newTipoDoc | null>>;
+    setSelectedOption3: React.Dispatch<React.SetStateAction<newProDucto | null>>;
+    setSelectedOption4: React.Dispatch<React.SetStateAction<newCategoria | null>>;
     email: string | null;
     password: string | null;
     setEmail: React.Dispatch<React.SetStateAction<string | null>>;

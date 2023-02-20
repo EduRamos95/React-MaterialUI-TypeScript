@@ -204,8 +204,8 @@ return (
         maxWidth: '100%',
         }}>
         { FilterItems.map((item, index) => {
-            let selectedOption: newTipoDoc | newCategoria | newProDucto | newInversionista | null;
-            let setSelectedOption:React.Dispatch<React.SetStateAction<newTipoDoc | newCategoria | newProDucto | newInversionista | null>>;
+            let selectedOption: any | null;
+            let setSelectedOption:React.Dispatch<React.SetStateAction<any | null>>;
             
             selectedOption = optionListSelect[index];
             setSelectedOption = optionListSet[index];
