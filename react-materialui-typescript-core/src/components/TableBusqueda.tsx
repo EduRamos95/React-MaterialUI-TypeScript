@@ -292,6 +292,7 @@ const [loadState, setLoadState] = useState<boolean>(true);
     { field: 'tipoDocumento', headerName: 'Tipo Doc', width: 100,},
     { field: 'nombreFile', headerName: 'Archivo', width: 140,},
     { field: 'codAwsUrl', headerName: 'URL', width: 100,},
+    
   ];
 
 
@@ -314,7 +315,7 @@ const [loadState, setLoadState] = useState<boolean>(true);
   const [showTable, setShowTable] = useState(false);
   setTimeout(() => {
     setLoadState(false);
-  }, 3000);
+  }, 1000);
   const handleShow = () => {
     setShowTable(false);
     setTablaLoad(LoadDataTable(filterButton));

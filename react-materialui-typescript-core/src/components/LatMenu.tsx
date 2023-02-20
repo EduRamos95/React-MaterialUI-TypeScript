@@ -123,7 +123,7 @@ export const LatMenu: React.FC<{}> = ():JSX.Element => {
         };
         const timer = setTimeout(() => {
             fetchData();
-          }, 5000);
+          }, 2000);
         return () => clearTimeout(timer);
     }, [])
 
