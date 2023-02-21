@@ -16,6 +16,9 @@ import Typography from '@mui/material/Typography';
 // import jwt from 'jsonwebtoken';
 import * as React from 'react';
 import { useNavigate } from "react-router-dom";
+import { SelectionContext } from '../context/SelectionContext';
+import { useContext } from 'react';
+import { usUario } from '../assets/data_user';
 
 // const token = jwt.sign({ /* payload */ }, 'secret');
 // interface User {
@@ -88,6 +91,9 @@ function Copyright(props: any) {
 // }
 
 export function LoginMenu() {
+
+  const { setSessionRol } = useContext(SelectionContext);
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -95,8 +101,10 @@ export function LoginMenu() {
     fetch('http://localhost:8000/tUsuarios')
       .then(response => response.json())
       .then((item) => {
-        const elemento = item.filter((dato:any) => dato.email === email && dato.password === password)
+        const elemento:usUario[] = item.filter((dato:usUario) => dato.email === email && dato.password === password)
         if (elemento.length) {
+          // captar la data de idrol y settear el variable sessionRol
+          setSessionRol(elemento[0].idRol)
           navigate("/app")
         }
         // console.log(item[0].email);
