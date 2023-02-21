@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Grid } from '@mui/material';
+import { UserEditor } from '../components/LoginCrud';
 import { NavBar } from '../common/NavBar'
 import { SelectionContext } from '../context/SelectionContext';
 
@@ -28,7 +29,7 @@ export const AppUser: React.FunctionComponent<{}> = (): JSX.Element => {
               <Grid item sx={{
                 display: 'flex',
               }}>
-                <h1>Soy usuario con permiso:</h1>
+                <UserEditor/>
               </Grid>
 
             </Grid>
