@@ -39,7 +39,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
 
     const location = useLocation();
     const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedOption4 } = useContext(SelectionContext);
-    const {sessionRol} = useContext(SelectionContext);
+    const {sessionRol, setSessionRol} = useContext(SelectionContext);
 
     const navigate = useNavigate();
     const setFilter = ():void => {
@@ -110,6 +110,12 @@ export const NavBar: React.FunctionComponent<{}> = () => {
     const handleCloseUserMenu = () => {
     setAnchorElUser(null);
     };
+
+    const changeRol = (path:string) => {
+        if (path === '/login'){
+            setSessionRol(null)
+        }
+    }
 
     return (
     <AppBar color='secondary' position="static">
@@ -274,7 +280,14 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 onClose={handleCloseUserMenu}
             >
                 {settings.map((setting) => (
-                <MenuItem id={location.pathname === setting.ruta ? 'menuItem':''} key={setting.name} onClick={() => {return(setFilter(), navigate(setting.ruta))}} disabled={location.pathname === setting.ruta}>
+                <MenuItem id={location.pathname === setting.ruta ? 'menuItem':''} key={setting.name}
+                  onClick={() => {
+                    return(
+                        setFilter(),
+                        changeRol('/login'),
+                        navigate(setting.ruta)
+                    )}} 
+                  disabled={location.pathname === setting.ruta}>
                     <ListItemIcon>
                         {setting.sticon}
                     </ListItemIcon>
