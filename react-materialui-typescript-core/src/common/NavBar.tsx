@@ -284,7 +284,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                   onClick={() => {
                     return(
                         setFilter(),
-                        changeRol('/login'),
+                        changeRol(setting.ruta),
                         navigate(setting.ruta)
                     )}} 
                   disabled={location.pathname === setting.ruta}>

@@ -73,7 +73,7 @@ function AppRoutes() {
   const [selectedOption4, setSelectedOption4] = useState<newCategoria | null>(null);
   const [email , setEmail] = useState<string | null>(null);
   const [password, setPassword] = useState<string | null>(null);
-  const [sessionRol, setSessionRol] = useState<number | null>(1);
+  const [sessionRol, setSessionRol] = useState<number | null>(null);
   
   return (
     <SelectionContext.Provider
