@@ -23,19 +23,24 @@ import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
 //import { pink } from "@mui/material/colors";
 import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
-import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+//import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
 //import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { redirect, Link, useNavigate } from "react-router-dom";
+//import { redirect, Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { SelectionContext } from '../context/SelectionContext';
-import { green, grey, red } from "@mui/material/colors";
+//import { green, grey, red } from "@mui/material/colors";
 
 
 export const NavBar: React.FunctionComponent<{}> = () => {
+
+
+
     const location = useLocation();
     const { setSelectedOption1, setSelectedOption2, setSelectedOption3, setSelectedOption4 } = useContext(SelectionContext);
-    // const pages = ['Actualizar', 'Busqueda', 'Carga Archivo'];
+    const {sessionRol} = useContext(SelectionContext);
+
     const navigate = useNavigate();
     const setFilter = ():void => {
         setSelectedOption1(null)
@@ -48,18 +53,21 @@ export const NavBar: React.FunctionComponent<{}> = () => {
             name: 'Actualizar',
             ruta: '/user',
             keyChild1: 'actualizar',
+            permiso: 1,
             sticon: <SensorOccupiedIcon />,
         },
         {
             name: 'Busqueda',
             ruta: '/search',
             keyChild1: 'busqueda',
+            permiso: 3,
             sticon: <ManageSearchIcon />,
         },
         {
             name: 'Carga Archivo',
             ruta: '/file',
             keyChild1: 'carga_archivo',
+            permiso: 2,
             sticon: <CloudUploadOutlinedIcon />,
         }
     ]
@@ -170,7 +178,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                   id={location.pathname === page.ruta ? 'menuItem':''}
                   key={page.name} 
                   onClick={() => {return(setFilter(), navigate(page.ruta))} } 
-                  disabled={location.pathname === page.ruta}>
+                  disabled={location.pathname === page.ruta || (sessionRol ? (sessionRol > page.permiso ? true : false) : false)}>
                     <ListItemIcon key={page.keyChild1 + 'Icon'} id={location.pathname === page.ruta ? 'menuBarIcon':''}>
                         {page.sticon}
                     </ListItemIcon>
@@ -226,7 +234,7 @@ export const NavBar: React.FunctionComponent<{}> = () => {
                 key={page.name}
                 value={page.ruta}
                 onClick={() => {return(setFilter(), navigate(page.ruta))}}
-                disabled={location.pathname === page.ruta}
+                disabled={location.pathname === page.ruta || (sessionRol ? (sessionRol > page.permiso ? true : false) : false)}
                 sx={{ 
                     my: 2,
                     //color: 'white', 

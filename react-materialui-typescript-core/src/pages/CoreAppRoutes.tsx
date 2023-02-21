@@ -13,7 +13,7 @@ import { AppBusquedav2 } from './CoreBusqueda2';
 import { AppFile } from './CoreFile';
 import { AppProfile } from './CoreProfile';
 import { AppUser } from './CoreUsers';
-import { LoginMenu } from './Login';
+import { LoginMenu } from './login';
 import RegisterUser from './RegisterUser';
 import { RestorePass } from './RestorePass';
 
@@ -73,7 +73,8 @@ function AppRoutes() {
   const [selectedOption4, setSelectedOption4] = useState<newCategoria | null>(null);
   const [email , setEmail] = useState<string | null>(null);
   const [password, setPassword] = useState<string | null>(null);
-  const [sessionRol, setSessionRol] = useState<number | null>(null);
+  const [sessionRol, setSessionRol] = useState<number | null>(3);
+  
   return (
     <SelectionContext.Provider
       value={{
