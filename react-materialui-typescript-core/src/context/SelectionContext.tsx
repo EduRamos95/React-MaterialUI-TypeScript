@@ -18,6 +18,8 @@ interface SelectionContextType {
     password: string | null;
     setEmail: React.Dispatch<React.SetStateAction<string | null>>;
     setPassword: React.Dispatch<React.SetStateAction<string | null>>;
+    sessionRol: number | null;
+    setSessionRol: React.Dispatch<React.SetStateAction<number | null>>;
 }
 
 export const SelectionContext = React.createContext<SelectionContextType>({
@@ -33,4 +35,6 @@ export const SelectionContext = React.createContext<SelectionContextType>({
     password: null,
     setEmail: () => {},
     setPassword: () => {},
+    sessionRol:null,
+    setSessionRol: () => {}
 });
