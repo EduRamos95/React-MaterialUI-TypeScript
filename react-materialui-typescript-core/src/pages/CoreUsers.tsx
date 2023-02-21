@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
 import { Container, Grid } from '@mui/material';
+import React, { useContext } from 'react';
+import { NavBar } from '../common/NavBar';
 import { UserEditor } from '../components/LoginCrud';
-import { NavBar } from '../common/NavBar'
 import { SelectionContext } from '../context/SelectionContext';
 
 export const AppUser: React.FunctionComponent<{}> = (): JSX.Element => {
@@ -27,9 +27,11 @@ export const AppUser: React.FunctionComponent<{}> = (): JSX.Element => {
               </Grid>
 
               <Grid item sx={{
-                display: 'flex',
+                display: 'block',
               }}>
-                <UserEditor/>
+                <div>
+                  <UserEditor />
+                </div>
               </Grid>
 
             </Grid>
