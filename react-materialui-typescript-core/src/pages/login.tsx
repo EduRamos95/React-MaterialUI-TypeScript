@@ -97,6 +97,7 @@ export function LoginMenu() {
       .then((item) => {
         const elemento = item.filter((dato:any) => dato.email === email && dato.password === password)
         if (elemento.length) {
+          // captar la data de idrol y settear el variable sessionRol
           navigate("/app")
         }
         // console.log(item[0].email);
