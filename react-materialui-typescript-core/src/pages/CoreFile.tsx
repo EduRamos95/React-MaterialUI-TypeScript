@@ -1,8 +1,8 @@
+import { Container, Grid } from '@mui/material';
 import React from 'react';
-import { Button, Container, Grid, Typography } from '@mui/material';
-import {NavBar} from '../common/NavBar'
-import { LatMenu } from '../components/LatMenu'
-import UploadFiles from '../components/FileUpload'
+import { NavBar } from '../common/NavBar';
+import UploadFiles from '../components/FileUpload';
+import { LatMenu } from '../components/LatMenu';
 
 export const AppFile: React.FunctionComponent<{}> = ():JSX.Element => {
     return (

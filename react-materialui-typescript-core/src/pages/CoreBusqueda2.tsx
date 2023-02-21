@@ -1,9 +1,9 @@
 //import React, { useState, useContext } from 'react';
-import React, { useState } from 'react';
-import '../styles/CoreAppV1.css';
-import {Button, Container, Grid, Typography} from "@mui/material"
+import { Container, Grid } from "@mui/material";
+import React from 'react';
 import { NavBar } from '../common/NavBar';
-import { LatMenu } from '../components/LatMenu'
+import { LatMenu } from '../components/LatMenu';
+import '../styles/CoreAppV1.css';
 //import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 //import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 //import { SelectionContext } from '../context/SelectionContext';

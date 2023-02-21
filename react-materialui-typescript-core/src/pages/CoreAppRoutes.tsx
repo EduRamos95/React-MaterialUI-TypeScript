@@ -1,18 +1,21 @@
-import { Route , Routes, BrowserRouter as Router } from 'react-router-dom';
-import React, {useState} from 'react';
-import AppV1 from './CoreAppV1'
+import { useState } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import AppV1 from './CoreAppV1';
 //import AppBusqueda1 from './CoreBusquedaTEST'
 //import {AppBusqueda} from './CoreBusqueda'
-import {AppBusquedav2} from './CoreBusqueda2'
-import {AppFile} from './CoreFile'
-import {AppProfile} from './CoreProfile'
-import {AppUser} from './CoreUsers'
-import {core_route} from '../types/interfaz'
-import {SelectionContext} from '../context/SelectionContext';
-import {newInversionista} from '../assets/data_inversionistas'
-import {newProDucto} from '../assets/data_producto'
-import {newCategoria} from '../assets/data_levantamiento'
-import {newTipoDoc} from '../assets/data_documento'
+import { newTipoDoc } from '../assets/data_documento';
+import { newInversionista } from '../assets/data_inversionistas';
+import { newCategoria } from '../assets/data_levantamiento';
+import { newProDucto } from '../assets/data_producto';
+import { SelectionContext } from '../context/SelectionContext';
+import { core_route } from '../types/interfaz';
+import { AppBusquedav2 } from './CoreBusqueda2';
+import { AppFile } from './CoreFile';
+import { AppProfile } from './CoreProfile';
+import { AppUser } from './CoreUsers';
+import { LoginMenu } from './Login';
+import RegisterUser from './RegisterUser';
+import { RestorePass } from './RestorePass';
 
 const CoreRoute: core_route[] = [
     {
@@ -40,6 +43,21 @@ const CoreRoute: core_route[] = [
     {
         path: '/user',
         render: <AppUser />,
+        //render: AppUser,
+    },
+    {
+        path: '/login',
+        render: <LoginMenu />,
+        //render: AppUser,
+    },
+    {
+        path: '/register_user',
+        render: <RegisterUser />,
+        //render: AppUser,
+    },
+    {
+        path: '/restore',
+        render: <RestorePass />,
         //render: AppUser,
     },
 ]

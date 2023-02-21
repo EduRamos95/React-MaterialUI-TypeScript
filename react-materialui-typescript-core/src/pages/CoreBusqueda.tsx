@@ -1,9 +1,9 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext, useState } from 'react';
 // import logo from '../logo.svg';
-import '../styles/CoreAppV1.css';
-import {Button, Container, Grid, Typography} from "@mui/material"
+import { Button, Container, Grid, Typography } from "@mui/material";
 import { NavBar } from '../common/NavBar';
-import { LatMenu } from '../components/LatMenu'
+import { LatMenu } from '../components/LatMenu';
+import '../styles/CoreAppV1.css';
 //import { display } from '@mui/system';
 //import { inherits } from '@babel/types';
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
