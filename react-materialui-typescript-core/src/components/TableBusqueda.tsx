@@ -1,4 +1,5 @@
-import React, { useState, useContext, useRef } from 'react';
+// import React, { useState, useContext, useRef } from 'react';
+import React, { useState, useContext} from 'react';
 import '../styles/CoreAppV1.css';
 import {Box, Button, Container, Grid, Typography} from "@mui/material"
 //import { NavBar } from '../common/NavBar';
@@ -214,29 +215,31 @@ const [loadState, setLoadState] = useState<boolean>(true);
   // ];
 
 
-  const [urlData, setUrlData] = useState<String>('')
+  // const [urlData, setUrlData] = useState<String>('')
   // version Render Boton
   const columns: GridColDef[] = [
     
     
-    { field: 'id', headerName: 'Id', width: 50,},
-    { field: 'tipoDoc', headerName: 'Tipo Ide', width: 90,},
-    { field: 'numDoc', headerName: 'Nro. Identidad', width: 140,},
-    { field: 'nombreInversionista', headerName: 'Inversionista', width: 320,},
-    { field: 'PEP', headerName: 'PEP', width: 50,},
-    { field: 'codigoProducto', headerName: 'Cod', width: 70,},
-    { field: 'nombreProducto', headerName: 'Producto', width: 320,},
-    { field: 'descripcionCategoria', headerName: 'Categoria', width: 150,},
-    { field: 'tipoDocumento', headerName: 'Tipo Doc', width: 100,},
-    { field: 'nombreFile', headerName: 'Archivo', width: 250,},
     { 
-      field: 'codAwsUrl', 
+      field: 'codAwsUrl',
+      headerAlign: 'center', 
       headerName: 'URL', 
-      width: 300,
+      align: 'center',
+      width: 120,
       renderCell: (params) => (
         <DocumentPreviewButton documentUrl={params.value}/>
       ),
     },
+    { field: 'id', headerName: 'N°', flex:1,align: 'center',headerAlign: 'center'},
+    { field: 'nombreFile', headerName: 'Archivo',width: 200,headerAlign: 'center'},
+    { field: 'tipoDocumento', headerName: 'Doc', width: 100,align: 'center',headerAlign: 'center'},
+    { field: 'PEP', headerName: 'PEP', width: 50, align: 'center',headerAlign: 'center'},
+    { field: 'tipoDoc', headerName: 'Id', width: 90, align: 'center',headerAlign: 'center'},
+    { field: 'numDoc', headerName: 'Nro. Identidad', width: 140,align: 'center',headerAlign: 'center'},
+    { field: 'nombreInversionista', headerName: 'Inversionista', width: 320,headerAlign: 'center'},
+    { field: 'codigoProducto', headerName: 'Cod', width: 70,align: 'center',headerAlign: 'center'},
+    { field: 'nombreProducto', headerName: 'Producto', width: 290,headerAlign: 'center'},
+    { field: 'descripcionCategoria', headerName: 'Categoria', width: 150,align: 'center',headerAlign: 'center'},
     
   ];
 
@@ -362,6 +365,9 @@ const [loadState, setLoadState] = useState<boolean>(true);
       )}
       </Grid>
       </Grid>
+      <DocumentPreviewButton documentUrl={
+        'https://drive.google.com/file/d/1gbzc4j8ZgKtK4Av4c1Ey3l4QFUktkEel/view?usp=sharing'
+      }/>
       <h1 style={{ display:'flex' }}>TableBusqueda Component</h1>
       <h4>persona valor: {selectedOption1?.id}</h4>
       <h4>doc valor: {selectedOption2?.id}</h4>
