@@ -10,7 +10,7 @@ import { newProDucto } from '../assets/data_producto';
 import { SelectionContext } from '../context/SelectionContext';
 import { core_route } from '../types/interfaz';
 import { AppBusquedav2 } from './CoreBusqueda2';
-import { AppFile } from './CoreFile';
+import { AppFileV2 } from './CoreFileV2';
 import { AppProfile } from './CoreProfile';
 import { AppUser } from './CoreUsers';
 import { LoginMenu } from './login';
@@ -32,7 +32,7 @@ const CoreRoute: core_route[] = [
     },
     {
         path: '/file',
-        render: <AppFile />,
+        render: <AppFileV2 />,
         //render: AppFile,
     },
     {
