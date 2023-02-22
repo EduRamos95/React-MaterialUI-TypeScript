@@ -1,7 +1,7 @@
 import React, {useContext, useState}from 'react';
 import Dropzone, { DropEvent, FileRejection } from 'react-dropzone';
 import './Fileupload.css'
-import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
+//import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
 import { red } from '@mui/material/colors';
 import { Button, Grid, Typography } from '@mui/material';
@@ -9,7 +9,7 @@ import UploadIcon from '@mui/icons-material/Upload';
 import BackspaceIcon from '@mui/icons-material/Backspace';
 //import { start } from 'repl';
 import { SelectionContext } from '../context/SelectionContext';
-import { margin, palette } from '@mui/system';
+//import { margin, palette } from '@mui/system';
 import { themePalette } from '../config/theme.condig';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import { motion , AnimatePresence } from "framer-motion";

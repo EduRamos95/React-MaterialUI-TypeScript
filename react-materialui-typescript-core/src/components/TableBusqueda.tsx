@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useRef } from 'react';
 import '../styles/CoreAppV1.css';
 import {Box, Button, Container, Grid, Typography} from "@mui/material"
 //import { NavBar } from '../common/NavBar';
@@ -12,6 +12,8 @@ import {caTegoria, newCategoria} from '../assets/data_levantamiento'
 import {tipoDoc, newTipoDoc} from '../assets/data_documento'
 import {LinearProgress} from '@mui/material';
 import { auto } from '@popperjs/core';
+import {DocumentPreviewButton} from './VisualFile';
+
 
 export const TableBusqueda: React.FunctionComponent<{}> = ():JSX.Element => {
 
@@ -194,6 +196,26 @@ const [loadState, setLoadState] = useState<boolean>(true);
   -----------------------------
   */
 
+  // const columns: GridColDef[] = [
+    
+    
+  //   { field: 'id', headerName: 'Id', width: 50,},
+  //   { field: 'tipoDoc', headerName: 'Tipo Ide', width: 90,},
+  //   { field: 'numDoc', headerName: 'Nro. Identidad', width: 140,},
+  //   { field: 'nombreInversionista', headerName: 'Inversionista', width: 320,},
+  //   { field: 'PEP', headerName: 'PEP', width: 50,},
+  //   { field: 'codigoProducto', headerName: 'Cod', width: 70,},
+  //   { field: 'nombreProducto', headerName: 'Producto', width: 320,},
+  //   { field: 'descripcionCategoria', headerName: 'Categoria', width: 150,},
+  //   { field: 'tipoDocumento', headerName: 'Tipo Doc', width: 100,},
+  //   { field: 'nombreFile', headerName: 'Archivo', width: 140,},
+  //   { field: 'codAwsUrl', headerName: 'URL', width: 100,},
+    
+  // ];
+
+
+  const [urlData, setUrlData] = useState<String>('')
+  // version Render Boton
   const columns: GridColDef[] = [
     
     
@@ -206,10 +228,48 @@ const [loadState, setLoadState] = useState<boolean>(true);
     { field: 'nombreProducto', headerName: 'Producto', width: 320,},
     { field: 'descripcionCategoria', headerName: 'Categoria', width: 150,},
     { field: 'tipoDocumento', headerName: 'Tipo Doc', width: 100,},
-    { field: 'nombreFile', headerName: 'Archivo', width: 140,},
-    { field: 'codAwsUrl', headerName: 'URL', width: 100,},
+    { field: 'nombreFile', headerName: 'Archivo', width: 250,},
+    { 
+      field: 'codAwsUrl', 
+      headerName: 'URL', 
+      width: 300,
+      renderCell: (params) => (
+        <DocumentPreviewButton documentUrl={params.value}/>
+      ),
+    },
     
   ];
+
+// const dataGridRef = useRef(null);
+
+// interface SelectionObject {
+//   selectionModel: Tabla[];
+//   lastSelection: Tabla;
+//   selectionModelUpdate: unknown;
+//   rows: Tabla[];
+// }
+
+// function handleSelectionChange(newSelection:any) {
+//   const selectedRow = newSelection.rows[0];
+//   const rowData = dataGridRef.current?.getRow(selectedRow) as Tabla;
+//   console.log(rowData);
+// }
+
+
+
+
+
+    // { 
+    //   field: 'codAwsUrl', 
+    //   headerName: 'URL', 
+    //   width: 150,
+    //   renderCell: (params) => (
+    //     <Button variant="contained" color="primary" onClick={() => window.open(params.value)}>
+    //       {params.value} Descargar
+    //     </Button>
+    //   ),
+    // },
+
 
 
   // {
@@ -272,6 +332,9 @@ const [loadState, setLoadState] = useState<boolean>(true);
               pageSize={10}
               autoHeight={true}
               rowsPerPageOptions={[10]}
+             // onSelectionModelChange={handleSelectionChange}
+             // selectionModelMode='single'
+              //ref={dataGridRef}
              // checkboxSelection
               sx={{
                 mt: 1,
