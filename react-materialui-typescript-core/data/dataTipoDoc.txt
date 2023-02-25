@@ -1,0 +1,16 @@
+function getTipoDoc():TipoDoc[]{
+return [
+    {
+      nombre: "Contrato"
+    },
+    {
+      nombre: "Anexo 1"
+    },
+    {
+      nombre: "Anexo 2"
+    },
+    {
+      nombre: "Ficha Cliente"
+    }
+ ];
+};

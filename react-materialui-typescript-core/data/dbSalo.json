@@ -1,0 +1,867 @@
+{
+  "tInversionistaProducto": [
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto":
+    },
+    {
+      "idInversionista":
+      "idProducto": 
+    }
+  ],
+  "tProductoCategoria": [
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "USER"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": 4
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "USER"
+    },
+    {
+      "idProducto": 4,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 4,
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 5,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 6,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 7,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 8,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 7,
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 9,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 10,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 4,
+      "idCategoria": "USER"
+    },
+    {
+      "idProducto": 8,
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 9,
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 7,
+      "idCategoria": "USER"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": 4
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 6,
+      "idCategoria": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 11,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 12,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 1"USER",
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 14,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 15,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 16,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 17,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 18,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 19,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 20,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 21,
+      "idCategoria": "ADMIN"
+    },
+    {
+      "idProducto": 22,
+      "idCategoria": "ADMIN"
+    }
+  ],
+  "tProductoCategoriaInversionista": [
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "ADMIN",
+      "idInversionista": "ADMIN"
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": "ADMIN"
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "USER",
+      "idInversionista": "ADMIN"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "ADMIN",
+      "idInversionista": 4
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "ADMIN",
+      "idInversionista": 5
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": 4,
+      "idInversionista": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": "USER"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "USER",
+      "idInversionista": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 4,
+      "idCategoria": "ADMIN",
+      "idInversionista": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 4,
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": 5
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": 6
+    },
+    {
+      "idProducto": 5,
+      "idCategoria": "ADMIN",
+      "idInversionista": 7
+    },
+    {
+      "idProducto": 6,
+      "idCategoria": "ADMIN",
+      "idInversionista": 9
+    },
+    {
+      "idProducto": 7,
+      "idCategoria": "ADMIN",
+      "idInversionista": 9
+    },
+    {
+      "idProducto": 8,
+      "idCategoria": "ADMIN",
+      "idInversionista": 9
+    },
+    {
+      "idProducto": 7,
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": 9
+    },
+    {
+      "idProducto": 9,
+      "idCategoria": "ADMIN",
+      "idInversionista": 10
+    },
+    {
+      "idProducto": 10,
+      "idCategoria": "ADMIN",
+      "idInversionista": "USER"
+    },
+    {
+      "idProducto": 4,
+      "idCategoria": "USER",
+      "idInversionista": 4
+    },
+    {
+      "idProducto": 8,
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": 6
+    },
+    {
+      "idProducto": 9,
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": 7
+    },
+    {
+      "idProducto": 7,
+      "idCategoria": "USER",
+      "idInversionista": 8
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": 4,
+      "idInversionista": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": "ADMIN"
+    },
+    {
+      "idProducto": 6,
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idInversionista": 5
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "ADMIN",
+      "idInversionista": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": "ADMIN",
+      "idCategoria": "ADMIN",
+      "idInversionista": 5
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "USER",
+      "idInversionista": 8
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "USER",
+      "idInversionista": 4
+    },
+    {
+      "idProducto": 6,
+      "idCategoria": "ADMIN",
+      "idInversionista": "USER"
+    },
+    {
+      "idProducto": 6,
+      "idCategoria": "ADMIN",
+      "idInversionista": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "USER",
+      "idInversionista": "ADMIN"
+    },
+    {
+      "idProducto": "CARNETEXTRANJERIA",
+      "idCategoria": "USER",
+      "idInversionista": 7
+    },
+    {
+      "idProducto": 10,
+      "idCategoria": "ADMIN",
+      "idInversionista": 8
+    },
+    {
+      "idProducto": 10,
+      "idCategoria": "ADMIN",
+      "idInversionista": 9
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "ADMIN",
+      "idInversionista": 8
+    },
+    {
+      "idProducto": "USER",
+      "idCategoria": "ADMIN",
+      "idInversionista": "USER"
+    },
+    {
+      "idProducto": 11,
+      "idCategoria": "ADMIN",
+      "idInversionista": 9
+    },
+    {
+      "idProducto": 12,
+      "idCategoria": "ADMIN",
+      "idInversionista": 7
+    },
+    {
+      "idProducto": 1"USER",
+      "idCategoria": "ADMIN",
+      "idInversionista": 5
+    },
+    {
+      "idProducto": 14,
+      "idCategoria": "ADMIN",
+      "idInversionista": "USER"
+    },
+    {
+      "idProducto": 15,
+      "idCategoria": "ADMIN",
+      "idInversionista": 4
+    },
+    {
+      "idProducto": 16,
+      "idCategoria": "ADMIN",
+      "idInversionista": 5
+    },
+    {
+      "idProducto": 17,
+      "idCategoria": "ADMIN",
+      "idInversionista": 6
+    },
+    {
+      "idProducto": 18,
+      "idCategoria": "ADMIN",
+      "idInversionista": 4
+    },
+    {
+      "idProducto": 19,
+      "idCategoria": "ADMIN",
+      "idInversionista": "CARNETEXTRANJERIA"
+    },
+    {
+      "idProducto": 20,
+      "idCategoria": "ADMIN",
+      "idInversionista": "USER"
+    },
+    {
+      "idProducto": 21,
+      "idCategoria": "ADMIN",
+      "idInversionista": 5
+    },
+    {
+      "idProducto": 22,
+      "idCategoria": "ADMIN",
+      "idInversionista": 7
+    }
+  ],
+  "tDocumento": [
+    {
+      "nombreFile": "A.L1."ADMIN"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "A.L1."ADMIN".0",
+      "codAwsUrl": "https://www.youtube.com/",
+      "idCategoria": "ADMIN",
+      "idProducto": "ADMIN",
+      "idInversionista": "ADMIN",
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "A.L2."ADMIN"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "A.L2."ADMIN".0",
+      "codAwsUrl": "url2",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idProducto": "ADMIN",
+      "idInversionista": "ADMIN",
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "A.L"USER"."ADMIN"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "A.L"USER"."ADMIN".0",
+      "codAwsUrl": "url"USER"",
+      "idCategoria": "USER",
+      "idProducto": "ADMIN",
+      "idInversionista": "ADMIN",
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "A.L4."CARNETEXTRANJERIA" - excel",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "A.L4."CARNETEXTRANJERIA".0",
+      "codAwsUrl": "https://docs.google.com/spreadsheets/d/11yrREmHvOZz0Ekt1JQMnxv7GqNbze46H/edit?usp=share_link&ouid=1041867429981599"USER"6"USER"5&rtpof=true&sd=true",
+      "idCategoria": 4,
+      "idProducto": "ADMIN",
+      "idInversionista": "CARNETEXTRANJERIA",
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "A.L1."CARNETEXTRANJERIA"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "A.L1."CARNETEXTRANJERIA".0",
+      "codAwsUrl": "url5",
+      "idCategoria": "ADMIN",
+      "idProducto": "ADMIN",
+      "idInversionista": "CARNETEXTRANJERIA",
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "A.L1.5",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "A.L1.5.0",
+      "codAwsUrl": "url6",
+      "idCategoria": "ADMIN",
+      "idProducto": "ADMIN",
+      "idInversionista": 5,
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "B.L1.4 - excel2",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L1.4.0",
+      "codAwsUrl": "https://doc-08-4s-sheets.googleusercontent.com/export/su1i2ie110ua0plfa5rgts2fkc/p5pklkti67ov"USER"q4sasbascqukg/1677029715000/1041867429981599"USER"6"USER"5/1041867429981599"USER"6"USER"5/11yrREmHvOZz0Ekt1JQMnxv7GqNbze46H?format=REmHvOZz0Ekt1JQMnxv7GqNbze46H&dat=AP"USER"6HMX6R15f6"USER"ePOmfUiwNsMnpcjdUyeylxvVbICFK-aptSExfSyGpK_8C"USER"VnOsYGxofjnqu9lSLLZ820GO6WSmNaFOXWBP_1"USER"S0sVvQ7Qdd25UCmpA1seyoiJtX9gfJe4OF--kDWpFHGLMItX"USER"OLmc_k0UvJ_4og41GZl945N2p7yyQUGHUhvwf2ddvRticIeJ_w7ySFXpYtZ0mudxjZUjIXFN4z4VRBvZuHkH4DXWxNfPhhYGfkab4YvasDBmFvbFjPErbI-gIBSZyIPjO9M8viTpowM5UhMaiDQd_OxOp1S-uIziJDO5tHS1QvudlCnL"USER"vOgVGt5netnZLmjyEbYm90ReRLr74OMT2BoqUjGhZBNlDISGuzViJXdWw2vxIwQ_kZtg2pTGqBPz05rOvJuhkLKU9t_azYY--PyeK_CB0aeNvrDOxOu"USER"sYoN-haOktn2l8WJmse5zJyaEXYFB5uD6CUdUMhBQRjdibx9cPMe2h4j8SdAlqrnNn6XbpiRx7PWKaEZSqDbrcDh_"USER"ZmWY4YQD7JezPGX9evUk1Yvj8n4JXxt1w_U1c1aDgmUP4tmh4YhlyVwDDE1Z2suCvhjl1G5yVVGICuLxQIw5j2Zu6Mxr96wwgfrUOe69EnN-QRgCkly1grGjNkYAcWXXlxpYyrfMG8asjKlX1GTT28fuG-9otUXHcSc0A4NPgk-gJIR_-6kFauW6TFJzcL-0bCtkrlnHXu5reV2IQNS0prrI508blz4_U0rM-ePJIf1CC8mdbtB2HbEil"USER"ZABjbB27I6eb_SXZ8m5C4EHE"USER"Uve9U6buvGrJ-5kj4telwwDylFPbgDI45T"USER"VEgHaVQARZe0tjvktg5wCLfVpCWG_t8r4tdKTfY"USER"N_jQ0uP"USER"0"USER"qhssDKQxIakbulV6tlq64tpNaxWh4zYRMbIkUigStWA",
+      "idCategoria": "ADMIN",
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": 4,
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "B.L2."USER" - pdf share",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L2."USER".0",
+      "codAwsUrl": "https://drive.google.com/file/d/1gbzc4j8ZgKtK4Av4c1Ey"USER"l4QFUktkEel/view?usp=sharing",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": "USER",
+      "idTipoDocumento": "ADMIN"
+    },
+    {
+      "nombreFile": "B.L"USER"."CARNETEXTRANJERIA"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L"USER"."CARNETEXTRANJERIA".0",
+      "codAwsUrl": "url9",
+      "idCategoria": "USER",
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": "CARNETEXTRANJERIA",
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "B.L4."CARNETEXTRANJERIA"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L4."CARNETEXTRANJERIA".0",
+      "codAwsUrl": "url10",
+      "idCategoria": 4,
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": "CARNETEXTRANJERIA",
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "B.L"USER".8 - excel export",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L"USER".8.0",
+      "codAwsUrl": "https://doc-08-4s-sheets.googleusercontent.com/export/su1i2ie110ua0plfa5rgts2fkc/fjgnfs6e8fifhutk95b4t5fuuc/16770"USER"0615000/1041867429981599"USER"6"USER"5/1041867429981599"USER"6"USER"5/11yrREmHvOZz0Ekt1JQMnxv7GqNbze46H?format=REmHvOZz0Ekt1JQMnxv7GqNbze46H&dat=AP"USER"6HMXnLeZxLvwhkk"USER"CDfnK6GHUSJFwpVodLVguInW-1LgrzMvCBgzAeueK7imP1HYaqaou_g-RxesqHXD07KJJTevzFv-VH0WsB1"USER"MXYZpnu0t58rvCqs2ya"USER"K80Ihg0pOO99wTeqZMMAyGOeIabyIhg7jtivAzXAYGOfpf"USER"OYcCSKBxem2t2AB4xhKKXsHXS1ziIAGzmrlJIfk2WF4U_qDA5t8we9RAPtnWS"USER"6a7cdHNLcBpR7jGy_ax8LvsL6ys_gDxbnsk59qWFPo4CljyYum9xQk0zVfT-MrRYdPHdmifsSOx"USER"wW1k4H0rprYPDIc8v79DYNAP6Y_E0Od0n-7HaJ8cZqcURuR5L2NIT"USER"_l8bVdgawlOmSXUwrvLkK1poRjR6kxOH0V4LbnxXUp"USER"7IYGnnMPvvBVZrMC9ntY48MkZBXksObGd_svhqHY9yx7WlvE"USER"iWQfHk-C_tDrWSPo2"USER"soA46KATy-8MAmFFFEHlt6btFnvqt2vVkaN8i1"USER"54mr_cNcLcWevBTfrpROlnRjMwz6G6-o4NM8ZK"USER"OC_rmWKPmyJRui82Cu5zW8G_pIb6vOnuin8ff7gE96ZivVO9e9sJX0aobbk21kM"USER"0HBvtPrOKOTvIYYTgpWeDiUhNm2B6FtVyn0KDQWexx0UM8gPHxp7mCCLzNfCrjQ"USER"uevGN58WQoV2yMlLFqRYkPseomcPKMmrqBCQ6rjRBOp-CisKC-li7QG4aZNw_FVwT25v_N-kjYVhktRadsYBGv0skYYArkwAlQPzMQesUOCjjsXNUUMYAqhl0uhVS60x6v1zcdNZtPnid4jE72Jv6rh2lvd8mJIYK_lDalD0KLO9jtbZel98icGBtvl_RiXbBgUH_ffDfQX-Tv5rrvzlNPdhND_o7MqWjUj2xwpJYevjw"USER"AfA"USER"q58ZK_K91H-5Wg",
+      "idCategoria": "USER",
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": 8,
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "B.L"USER".4",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L"USER".4.0",
+      "codAwsUrl": "url12",
+      "idCategoria": "USER",
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": 4,
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "B.L"USER"."ADMIN"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L"USER"."ADMIN".0",
+      "codAwsUrl": "url1"USER"",
+      "idCategoria": "USER",
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": "ADMIN",
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "B.L"USER".7",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "B.L"USER".7.0",
+      "codAwsUrl": "url14",
+      "idCategoria": "USER",
+      "idProducto": "CARNETEXTRANJERIA",
+      "idInversionista": 7,
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "C.L1.5 - excel folder, doc share",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "C.L1.5.0",
+      "codAwsUrl": "https://doc-08-7g-docs.googleusercontent.com/docs/securesc/f62tnljn"USER"6f6b1ub69dusc2pj9rnfuot/"USER"8lnqab1t0q7jecbiqkmmrgv2avojqp8/16770"USER"0450000/184"USER"80288957679445"USER"9/184"USER"80288957679445"USER"9/11yrREmHvOZz0Ekt1JQMnxv7GqNbze46H?e=download&ax=AB85Z1CTgi-KLdlK-W4ZflGvxJ8RjAAQYvQfguA2oJycNXxovrNahzO2L2tv5W8sG"USER"sppAUQFwGBqfFZkmjY5_n"USER"R7pOrDPAxVCNkk7VJ68RIKUEyVHbmxjJiHcU2u942Bw4sW7LimhkTbj8MSHvJGkVu5ekAbtpv4buUwBjXVqZVqLQbIGVHLsTgKakg7CXs216Z9RV6UNJLtPhLGbNtC8c7tlLs4x8Vn5_X1zz02kdqhzr4M7q_T50Kyzx95R"USER"wUv52on"USER"CfLAuALfEaFv_QIwOHZ0jqH_lqB8bKPD2QMhk5VoCkdcqfHi"USER"B"USER"N9lU6RAwGVmgy1f8M7KNCbZ"USER"-BQELjr288W5sKjUj-2mhwLk6fnW6FicUHUkWKF81GZJg0MOMrNImew4ma64qnk1K_YnLig8T7k0zQSQd1Vii-Ox95v2IR8_D0QkTNqVtXO2ChyrRksV56E_QPjS4cdjFTnKRVeOR7ARpmYu4_uaL425bfMCsAxZyADcYHKzePanhzLbm002s9wZxH-Fyg9hx6_Ar2Or66JJysEFQ540WipzAErPOLTkXQQM-Ke-qxa_TN77DKtqM9DcyfmKAypFS2blBdVzXpIgsaJz7DW_5"USER"Rv2tgxVf6DYyOCAklVO_10mb2GMhynD6bMm5HCSNdhjIqY6Fi6h2fqTs1Md_ZFaGoaHjYxRT2wa7yOYnnyOilRNuuxNI2FAPsaiTnpIZ_FA7hRuRfiuFmTWqoRBs6tiOCnTSm5Yay_5CsDjVh41z-xu6WT1a9SyZJbrVWNF5XpdRruIc_0JHlq9NZ7sUbff"USER"aPE88zXQwscAS2toSV5ETVKZFkbfCtSLWKYcWX1u-_ybp7fC1mxRhMGI_u1FxM64UjvM0hD-h6f-KWmtIG-AapaPIQ&uuid=9444b29e-a6b6-4"USER"5b-a1bd-c"USER"6ca557f"USER"b0&authuser=0&nonce=6ht11akj"USER"qps4&user=184"USER"80288957679445"USER"9&hash=nnrlir2r0a7umgcf866gdvp8a6lf7mvu",
+      "idCategoria": "ADMIN",
+      "idProducto": "USER",
+      "idInversionista": 5,
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "C.L2.6 - jpg",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "C.L2.6.0",
+      "codAwsUrl": "https://doc-00-7g-docs.googleusercontent.com/docs/securesc/f62tnljn"USER"6f6b1ub69dusc2pj9rnfuot/uo51152c0b4ah77ijk84qf6vr7fvplvl/1677028950000/184"USER"80288957679445"USER"9/184"USER"80288957679445"USER"9/1PEHoF5wLGnpSA_DG8"USER"I8JGy-cc0OaBYU?e=download&ax=AB85Z1BJUrL04BpMkfoL-Xwx-MhWMmgJdUUq11TrtYjzH7-rwB0rIqQ9QMHuiLEUjNROLQCcAiAfG8RYnF0Rfbe"USER"HyCqtJK6y27dI-nWBGpKprJVixvwFbz7LeOjSoMHDyvcBUBY5jkzqz48fZb5KYmLSI2p7giB_D7yzpVguBUg4P"USER"tLwgOchNwSd_U0J1jAOfoFyXUY9rTQzdelkBaYEtd19lKQsZ-AIoma9Hg4Zm_k7fslOeQRCCQc09eBnN2vq5B9WAY92TQyRgK_4WDCpCIAx49yTlEUkQP0wXZ2x9BOfWWrUDrp9iRDhLyMZ2XMP6P2KelKj7Ggn4FvDJ9cC0qQ55SU8VMcCrlsvffyCqmIovUkpqMph-1Q-KOH-nqo_rM-AIpuOEYkxzBtg5apahdqd7WKU6Ygby2x1HCP-oKxISCyOnLIV-1VBrVYXXvEzLp5"USER"IK_gKIPWYHojqBUeT_TTqS2OyrnGE_1JzX--8_kMDb486aNAzcW9YtyVI0ijw_hPK-OLVjE"USER"Jdzbzv1YL76JnA_YVKaqRcFKGiiUTSnpjU8IN5N66QoEKYXN8J0cG-84L9DsygzO8"USER"rDrlvYuKdbIoWirH7S_qe9sSUy6YIrxBJOOqrB8VjSXeCASE2XZxBdMNVxXKzjqz7OFKNMraWY5i-ITJsCcBJKLpLWVeBt0OQD84oCNvJ87YHmLe5hfDquimrjjpeHepRCI2yyBYbuoaMUZapp0Dn7xswQjr4KQ4ROJGo587nnG"USER"LYz4AeX_XiN0IqK6zIDi0-OGvJTP5HaCYhy1nwRCe-qUQKM"USER"Q29_kaUaXJgpQ-tqi1tFL17Kxx6Q__WYL4VckQLyjm58kpu0threztv62htY9"USER"9Mr_6MVXDI-"USER"_gdAb9rAChNuM&uuid=fdd06eb6-"USER"846-4e5e-a4"USER"b-7e979d7e1e6a&authuser=0&nonce=op75ur2hm"USER"spu&user=184"USER"80288957679445"USER"9&hash=4o0ajrd7vql5cf2vojbv91q6qsqdupob",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idProducto": "USER",
+      "idInversionista": 6,
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "C.L2."ADMIN"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "C.L2."ADMIN".0",
+      "codAwsUrl": "url17",
+      "idCategoria": "CARNETEXTRANJERIA",
+      "idProducto": "USER",
+      "idInversionista": "ADMIN",
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "C.L"USER".8",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "C.L"USER".8.0",
+      "codAwsUrl": "url18",
+      "idCategoria": "USER",
+      "idProducto": "USER",
+      "idInversionista": 8,
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "C.L"USER"."USER"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "C.L"USER"."USER".0",
+      "codAwsUrl": "url19",
+      "idCategoria": "USER",
+      "idProducto": "USER",
+      "idInversionista": "USER",
+      "idTipoDocumento": "ADMIN"
+    },
+    {,
+      "nombreFile": "D.L1."CARNETEXTRANJERIA"",
+      "userSubida": "ADMIN",
+      "userActualiza": "ADMIN",
+      "userDelete": null,
+      "fechaSubida": "day1",
+      "fechaActualiza": null,
+      "fechaDelete": null,
+      "uuiAws": "D.L1."CARNETEXTRANJERIA".0",
+      "codAwsUrl": "url20",
+      "idCategoria": "ADMIN",
+      "idProducto": 4,
+      "idInversionista": "CARNETEXTRANJERIA",
+      "idTipoDocumento": "ADMIN"
+    }
+  ]
+}

@@ -127,27 +127,7 @@ const UploadFiles: React.FC = () => {
       }
       </AnimatePresence>
       </Grid>
-      {/* {
-        isDisabled && 
-        <motion.div
-        key='hijo2'
-        layout
-        initial={{ opacity: 0, scale: 0.2 }}
-        animate={{ opacity: 0.75, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.2 }}
-        transition={isDisabled ? exitTransition : initialTransition}
-        id='dentro'>
-          <CheckCircleOutlineOutlinedIcon sx={{
-                bg: red[500],
-               // height: '100px',
-                fontSize: '200px',
-                borderStyle: dataFile ? 'groove' : 'dashed',
-                borderColor: dataFile ? themePalette.NARANJACORE : '', 
-                borderWidth: dataFile ? '8px' : '3px',}}/>
-        </motion.div>
-      } */}
-      {/* </AnimatePresence>
-      </Grid> */}
+      
       
       <Grid item sx={{display: 'flex'}}>
       <Button variant='contained'

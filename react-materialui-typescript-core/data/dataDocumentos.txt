@@ -1,0 +1,228 @@
+function getDocumentos():Documentos[]{
+return [
+    {
+      nombreFile: "A.L1.1",
+      userSubida: "AutoLogin",
+      uuiAws: "A.L1.1.0",
+      urlAws: "url1",
+      tablaInversionistaId:"clegjgo4s0002alt348tfxvqb",
+      tablaProductoId:"clegjgo6q0018alt3vxml2rs3",
+      tablaCategoriaId:"clegjgo7k002halt3o04ob5ks",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "A.L2.1",
+      userSubida: "AutoLogin",
+      uuiAws: "A.L2.1.0",
+      urlAws: "url2",
+      tablaInversionistaId:"clegjgnzt0000alt36570szrm",
+      tablaProductoId:"clegjgo6q0010alt3mju4iv1t",
+      tablaCategoriaId:"clegjgo7k0026alt3itqw1fm6",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "A.L3.1",
+      userSubida: "AutoLogin",
+      uuiAws: "A.L3.1.0",
+      urlAws: "url3",
+      tablaInversionistaId:"clegjgo53000aalt3fdmgfuvc",
+      tablaProductoId:"clegjgo6q000salt3ie0lo6dq",
+      tablaCategoriaId:"clegjgo7k002aalt3q6581y05",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "A.L4.2 - excel",
+      userSubida: "AutoLogin",
+      uuiAws: "A.L4.2.0",
+      urlAws: "url4",
+      tablaInversionistaId:"clegjgo54000ealt3pi81gii2",
+      tablaProductoId:"clegjgo6q000talt3m25dy9c4",
+      tablaCategoriaId:"clegjgo7k002aalt3q6581y05",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "A.L1.2",
+      userSubida: "AutoLogin",
+      uuiAws: "A.L1.2.0",
+      urlAws: "url5",
+      tablaInversionistaId:"clegjgnzt0000alt36570szrm",
+      tablaProductoId:"clegjgo6q000ualt3l7yxycas",
+      tablaCategoriaId:"clegjgo7k002galt3evk3mby2",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "A.L1.5",
+      userSubida: "AutoLogin",
+      uuiAws: "A.L1.5.0",
+      urlAws: "url6",
+      tablaInversionistaId:"clegjgo56000galt37fib5euv",
+      tablaProductoId:"clegjgo70001lalt3ey5p28bw",
+      tablaCategoriaId:"clegjgo82003halt3s2dyez2o",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L1.4 - excel2",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L1.4.0",
+      urlAws: "url7",
+      tablaInversionistaId:"clegjgnzt0000alt36570szrm",
+      tablaProductoId:"clegjgo6q0016alt3tbll7rea",
+      tablaCategoriaId:"clegjgo7k0027alt39jgauo33",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L2.3 - pdf share",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L2.3.0",
+      urlAws: "url8",
+      tablaInversionistaId:"clegjgnzt0000alt36570szrm",
+      tablaProductoId:"clegjgo6q0014alt3pcqjfspa",
+      tablaCategoriaId:"clegjgo7k0027alt39jgauo33",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L3.2",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L3.2.0",
+      urlAws: "url9",
+      tablaInversionistaId:"clegjgo56000galt37fib5euv",
+      tablaProductoId:"clegjgo6q000ualt3l7yxycas",
+      tablaCategoriaId:"clegjgo7k002aalt3q6581y05",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L4.2",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L4.2.0",
+      urlAws: "url10",
+      tablaInversionistaId:"clegjgo53000aalt3fdmgfuvc",
+      tablaProductoId:"clegjgo6q000yalt35yd4si2d",
+      tablaCategoriaId:"clegjgo7k002kalt3wlatyrdm",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L3.8 - excel export",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L3.8.0",
+      urlAws: "url11",
+      tablaInversionistaId:"clegjgo54000ealt3pi81gii2",
+      tablaProductoId:"clegjgo6q0010alt3mju4iv1t",
+      tablaCategoriaId:"clegjgo7k0027alt39jgauo33",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L3.4",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L3.4.0",
+      urlAws: "url12",
+      tablaInversionistaId:"clegjgo56000galt37fib5euv",
+      tablaProductoId:"clegjgo6q000talt3m25dy9c4",
+      tablaCategoriaId:"clegjgo7k0027alt39jgauo33",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L3.1",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L3.1.0",
+      urlAws: "url13",
+      tablaInversionistaId:"clegjgo53000aalt3fdmgfuvc",
+      tablaProductoId:"clegjgo6q000yalt35yd4si2d",
+      tablaCategoriaId:"clegjgo7k002aalt3q6581y05",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "B.L3.7",
+      userSubida: "AutoLogin",
+      uuiAws: "B.L3.7.0",
+      urlAws: "url14",
+      tablaInversionistaId:"clegjgo54000ealt3pi81gii2",
+      tablaProductoId:"clegjgo6q0018alt3vxml2rs3",
+      tablaCategoriaId:"clegjgo7k002balt3tvas9to2",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "C.L1.5 - excel folder, doc share",
+      userSubida: "AutoLogin",
+      uuiAws: "C.L1.5.0",
+      urlAws: "url15",
+      tablaInversionistaId:"clegjgo4s0002alt348tfxvqb",
+      tablaProductoId:"clegjgo6q000salt3ie0lo6dq",
+      tablaCategoriaId:"clegjgo7k002aalt3q6581y05",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "C.L2.6 - jpg",
+      userSubida: "AutoLogin",
+      uuiAws: "C.L2.6.0",
+      urlAws: "url16",
+      tablaInversionistaId:"clegjgo53000aalt3fdmgfuvc",
+      tablaProductoId:"clegjgo70001galt3oaz86y8d",
+      tablaCategoriaId:"clegjgo7k0026alt3itqw1fm6",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "C.L2.1",
+      userSubida: "AutoLogin",
+      uuiAws: "C.L2.1.0",
+      urlAws: "url17",
+      tablaInversionistaId:"clegjgo4s0002alt348tfxvqb",
+      tablaProductoId:"clegjgo6q000yalt35yd4si2d",
+      tablaCategoriaId:"clegjgo7k0027alt39jgauo33",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "C.L3.8",
+      userSubida: "AutoLogin",
+      uuiAws: "C.L3.8.0",
+      urlAws: "url18",
+      tablaInversionistaId:"clegjgo53000aalt3fdmgfuvc",
+      tablaProductoId:"clegjgo70001galt3oaz86y8d",
+      tablaCategoriaId:"clegjgo7k002balt3tvas9to2",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "C.L3.3",
+      userSubida: "AutoLogin",
+      uuiAws: "C.L3.3.0",
+      urlAws: "url19",
+      tablaInversionistaId:"clegjgnzt0000alt36570szrm",
+      tablaProductoId:"clegjgo6q000ualt3l7yxycas",
+      tablaCategoriaId:"clegjgo7k002halt3o04ob5ks",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "D.L1.2",
+      userSubida: "AutoLogin",
+      uuiAws: "D.L1.2.0",
+      urlAws: "url20",
+      tablaInversionistaId:"clegjgnzt0000alt36570szrm",
+      tablaProductoId:"clegjgo6q0018alt3vxml2rs3",
+      tablaCategoriaId:"clegjgo7k002kalt3wlatyrdm",
+      tablaTipoDocumentoId:"clegjgo8r004palt3j2f44a9t"
+    },
+    {
+      nombreFile: "F.9",
+      userSubida: "AutoLogin",
+      uuiAws: "F.9.0",
+      urlAws: "urlficha9",
+      tablaInversionistaId:"clegjgo4z0006alt3xh25uev1",
+      tablaTipoDocumentoId:"clegjgo8r004ualt3hobdatka"
+    },
+    {
+      nombreFile: "F.10",
+      userSubida: "AutoLogin",
+      uuiAws: "F.10.0",
+      urlAws: "urlficha10",
+      tablaInversionistaId:"clegjgo6e000kalt31k7yk0vk",
+      tablaTipoDocumentoId:"clegjgo8r004ualt3hobdatka"
+    },
+    {
+      nombreFile: "F.12",
+      userSubida: "AutoLogin",
+      uuiAws: "F.12.0",
+      urlAws: "urlficha12",
+      tablaInversionistaId:"clegjgo6f000nalt3nnmae4bl",
+      tablaTipoDocumentoId:"clegjgo8r004ualt3hobdatka"
+    }
+  ];
+};

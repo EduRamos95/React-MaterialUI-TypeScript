@@ -1,0 +1,124 @@
+function getCategoria(): Categoria[] {
+return [
+    {
+      tipo: "levantamiento#1"
+    },
+    {
+      tipo: "levantamiento#2"
+    },
+    {
+      tipo: "levantamiento#3"
+    },
+    {
+      tipo: "levantamiento#4"
+    },
+    {
+      tipo: "levantamiento#5"
+    },
+    {
+      tipo: "levantamiento#6"
+    },
+    {
+      tipo: "levantamiento#7"
+    },
+    {
+      tipo: "levantamiento#8"
+    },
+    {
+      tipo: "levantamiento#9"
+    },
+    {
+      tipo: "levantamiento#10"
+    },
+    {
+      tipo: "levantamiento#11"
+    },
+    {
+      tipo: "levantamiento#12"
+    },
+    {
+      tipo: "levantamiento#13"
+    },
+    {
+      tipo: "levantamiento#14"
+    },
+    {
+      tipo: "levantamiento#15"
+    },
+    {
+      tipo: "levantamiento#16"
+    },
+    {
+      tipo: "levantamiento#17"
+    },
+    {
+      tipo: "levantamiento#18"
+    },
+    {
+      tipo: "levantamiento#19"
+    },
+    {
+      tipo: "levantamiento#20"
+    },
+    {
+      tipo: "emision#1"
+    },
+    {
+      tipo: "emision#2"
+    },
+    {
+      tipo: "emision#3"
+    },
+    {
+      tipo: "emision#4"
+    },
+    {
+      tipo: "emision#5"
+    },
+    {
+      tipo: "emision#6"
+    },
+    {
+      tipo: "emision#7"
+    },
+    {
+      tipo: "emision#8"
+    },
+    {
+      tipo: "emision#9"
+    },
+    {
+      tipo: "emision#10"
+    },
+    {
+      tipo: "emision#11"
+    },
+    {
+      tipo: "emision#12"
+    },
+    {
+      tipo: "emision#13"
+    },
+    {
+      tipo: "emision#14"
+    },
+    {
+      tipo: "emision#15"
+    },
+    {
+      tipo: "emision#16"
+    },
+    {
+      tipo: "emision#17"
+    },
+    {
+      tipo: "emision#18"
+    },
+    {
+      tipo: "emision#19"
+    },
+    {
+      tipo: "emision#20"
+    }
+  ];
+};

@@ -1,0 +1,39 @@
+function getUsuario():Usuario[]{
+return [
+    {
+      userNombre: "administrator",
+      email: "admin@gmail.com",
+      password: "psadmin",
+      estado: true,
+      rol: "ADMIN",
+    },
+    {
+      userNombre: "readwriteuser",
+      email: "rwuser@gmail.com",
+      password: "psrwu",
+      estado: true,
+      rol: "CARNETEXTRANJERIA",
+    },
+    {
+      userNombre: "readuser",
+      email: "r1user@gmail.com",
+      password: "psr1",
+      estado: true,
+      rol: "USER",
+    },
+    {
+      userNombre: "readuserf",
+      email: "r2user@gmail.com",
+      password: "psr2",
+      estado: false,
+      rol: "USER",
+    },
+    {
+      userNombre: "LibreTest",
+      email: "",
+      password: ""
+      estado: true,
+      rol: "ADMIN",
+    }
+  ];
+};

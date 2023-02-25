@@ -262,7 +262,7 @@ export const LatMenuLoad: React.FC<{}> = (): JSX.Element => {
                             sx={{ minWidth: '250px', maxWidth: '80%', }}
                             renderInput={(params) => {
                                 return (
-                                    <TextField key={FilterItems[1].keyui} color='neutral' {...params} label={FilterItems[1].text} size='medium'
+                                    <TextField key={FilterItems[1].keyui} required color='neutral' {...params} label={FilterItems[1].text} size='medium'
                                         InputProps={{
                                             ...params.InputProps,
                                             endAdornment: (

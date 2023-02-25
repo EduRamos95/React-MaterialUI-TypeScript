@@ -1,0 +1,104 @@
+function getProducto():Producto[]{
+return [
+    {
+      codProducto: "FEC-RF",
+      nombreProducto: "Fondo Edifica Core - Renta Fija"
+    },
+    {
+      codProducto: "FEC",
+      nombreProducto: "Fondo Edifica Core"
+    },
+    {
+      codProducto: "FDF",
+      nombreProducto: "Fondo de Derivados Financieros"
+    },
+    {
+      codProducto: "FECII",
+      nombreProducto: "Fondo Edifica Core II"
+    },
+    {
+      codProducto: "PRD",
+      nombreProducto: "Fondo Praedium"
+    },
+    {
+      codProducto: "B-PRD",
+      nombreProducto: "Bonos Corporativos Praedium"
+    },
+    {
+      codProducto: "TLR",
+      nombreProducto: "Fondo TLR"
+    },
+    {
+      codProducto: "PFM",
+      nombreProducto: "Fondo Performance"
+    },
+    {
+      codProducto: "FSC",
+      nombreProducto: "Fondo Seguridad Core"
+    },
+    {
+      codProducto: "B-FECII",
+      nombreProducto: "Bono FEC II"
+    },
+    {
+      codProducto: "PC-FECII",
+      nombreProducto: "Papeles Comerciales - FEC II"
+    },
+    {
+      codProducto: "FEQ",
+      nombreProducto: "Fondo Equilibrio"
+    },
+    {
+      codProducto: "FOP",
+      nombreProducto: "Fondo Oportunidad"
+    },
+    {
+      codProducto: "B-USA",
+      nombreProducto: "Bono USA"
+    },
+    {
+      codProducto: "B-TDR-A",
+      nombreProducto: "Bono TRD Artline"
+    },
+    {
+      codProducto: "FDI-1A",
+      nombreProducto: "FDI 1A"
+    },
+    {
+      codProducto: "FDI-B",
+      nombreProducto: "FDI 1B"
+    },
+    {
+      codProducto: "FEG",
+      nombreProducto: "Fondo Edifica Global"
+    },
+    {
+      codProducto: "FEV",
+      nombreProducto: "Fondo Edifica V"
+    },
+    {
+      codProducto: "FSPD",
+      nombreProducto: "FSPD"
+    },
+    {
+      codProducto: "FSPEVC",
+      nombreProducto: "FSPEVC"
+    },
+    {
+      codProducto: "FIRE",
+      nombreProducto: "FIRE"
+    },
+    {
+      codProducto: "FSGOP",
+      nombreProducto: "FSGOP"
+    },
+    {
+      codProducto: "FSRE",
+      nombreProducto: "Fondo Sabbi Real Estate"
+    },
+    {
+      codProducto: "FSGOP",
+      nombreProducto: "FSGOP"
+    }
+  ];
+};

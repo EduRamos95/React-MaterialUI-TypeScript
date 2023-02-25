@@ -1,0 +1,116 @@
+function getInversionista():Inversionista[]{
+return [
+    {
+      nombres: "Juan Manuel",
+      apPaterno: "Villa",
+      apMaterno: "Rushton",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "908070456",
+      pep: true
+    },
+    {
+      nombres: "Rodrigo Alessandro",
+      apPaterno: "De Luzio",
+      apMaterno: "Poquioma",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "908060154",
+      pep: true
+    },
+    {
+      nombres: "Elisa Pamela",
+      apPaterno: "LTD",
+      apMaterno: "Calderon",
+      tipoIdentificacion: "CARNETEXTRANJERIA",
+      nroIdentificacion: "917051362",
+      pep: true
+    },
+    {
+      nombres: "Mardely del Rosario",
+      apPaterno: "Alfaro",
+      apMaterno: "Stanic",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "947071556",
+      pep: true
+    },
+    {
+      nombres: "Luis Antonio",
+      apPaterno: "Velasco",
+      apMaterno: "Marcelo",
+      tipoIdentificacion: "CARNETEXTRANJERIA",
+      nroIdentificacion: "947032556",
+      pep: false
+    },
+    {
+      nombres: "Nataly",
+      apPaterno: "Guanilo",
+      apMaterno: "Casabonne",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "987654321",
+      pep: false
+    },
+    {
+      nombres: "Ericka Sofia",
+      apPaterno: "Rossi de Malaga",
+      apMaterno: "Flores",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "654987321",
+      pep: false
+    },
+    {
+      nombres: "Oscar Rodolfo",
+      apPaterno: "Picasso",
+      apMaterno: "Jara",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "987123654",
+      pep: true
+    },
+    {
+      nombres: "Alfredo Antonio",
+      apPaterno: "Portella",
+      apMaterno: "Valdez",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "998877660",
+      pep: false
+    },
+    {
+      nombres: "Sebastian Alejandro",
+      apPaterno: "Suluja",
+      apMaterno: "Arbulu",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "665544330",
+      pep: false
+    },
+    {
+      nombres: "Jose Carlos",
+      apPaterno: "Tremolada",
+      apMaterno: "Lam",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "223344550",
+      pep: true
+    },
+    {
+      nombres: "Maria Begoña",
+      apPaterno: "Aspillaga",
+      apMaterno: "Massa",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "998844550",
+      pep: true
+    },
+    {
+      nombres: "Renato Eduardo",
+      apPaterno: "Herbozo",
+      apMaterno: "Hoyos",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "664455770",
+      pep: false
+    },
+    {
+      nombres: "API Edu",
+      apPaterno: "Ramos",
+      apMaterno: "Maldonado",
+      tipoIdentificacion: "DNI",
+      nroIdentificacion: "987123654",
+      pep: true
+    }
+  ];
+};
